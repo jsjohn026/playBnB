@@ -4,10 +4,7 @@ import { withRouter } from "react-router-dom";
 class SessionForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      email: "",
-      password: ""
-    };
+    this.state = props.user
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -34,6 +31,30 @@ class SessionForm extends React.Component {
   }
 
   render() {
+    let name;
+
+    if (this.props.formType === "signup") {
+        name =( 
+          <>
+            <label>First name:
+                <input type="text"
+                value={this.state.fname}
+                onChange={this.update("fname")}
+                className="login-input" />
+            </label>
+            <br />
+            <label>Last name:
+                <input type="text"
+                value={this.state.lname}
+                onChange={this.update("lname")}
+                className="login-input" />
+            </label>
+            <br />
+          </>
+        )
+    }
+    // use fragments to wrap 
+
     return (
       <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
@@ -41,6 +62,7 @@ class SessionForm extends React.Component {
           Please {this.props.formType} or {this.props.navLink}
           {this.renderErrors()}
           <div className="login-form"><br/>
+            {name}
             <label>Email:
               <input type="text" 
               value={this.state.email} 

@@ -5,10 +5,11 @@ import { signup } from "../../actions/session_actions";
 import SessionForm from "./session_form";
 
 const mapStateToProps = (state, ownProps) => {
-  let errors = ownProps.state.errors.session;
+  let errors = state.errors.session;
 
   return {
     errors: errors,
+    user: { fname: "", lname: "", email: "", password: "" },
     formType: "signup",
     navLink: <Link to="/login">log in instead </Link>
   }

@@ -4,15 +4,15 @@ import {
 } from "../actions/session_actions";
 
 
-const sessionErrorsReducer = (state = {}, action) => {
+const sessionErrorsReducer = (state = [], action) => { //this is not state, this is actually going to be state.errors.session: in the global state
   Object.freeze(state);
   switch (action.type) {
     case RECEIVE_ERRORS:
-      return { errors: action.errors };
+      return action.errors; //session: [session errors]
     case RECEIVE_CURRENT_USER:
-      return { errors: [] };
+      return []; //session: []
     default:
-      return state;
+      return state; // session: whatever state was passed in
   }
 }
 
