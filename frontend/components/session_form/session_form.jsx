@@ -34,24 +34,24 @@ class SessionForm extends React.Component {
     let name;
 
     if (this.props.formType === "signup") {
-        name =( 
-          <>
-            <label>First name:
-                <input type="text"
-                value={this.state.fname}
-                onChange={this.update("fname")}
-                className="login-input" />
-            </label>
-            <br />
-            <label>Last name:
-                <input type="text"
-                value={this.state.lname}
-                onChange={this.update("lname")}
-                className="login-input" />
-            </label>
-            <br />
-          </>
-        )
+      name =( 
+        <>
+          <label>First name:
+            <input type="text"
+            value={this.state.fname}
+            onChange={this.update("fname")}
+            className="login-input" />
+        </label>
+        <br />
+        <label>Last name:
+            <input type="text"
+            value={this.state.lname}
+            onChange={this.update("lname")}
+            className="login-input" />
+          </label>
+          <br />
+        </>
+      )
     }
     // use fragments to wrap 
 

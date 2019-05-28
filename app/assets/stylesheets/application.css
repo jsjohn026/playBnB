@@ -22,6 +22,23 @@ body {
   line-height: 1.43;
 }
 
+h3 {
+  text-align: left;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background: transparent;
+  padding: 0px;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: rgb(72, 72, 72);
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
 ul {
   list-style: none;
 }
