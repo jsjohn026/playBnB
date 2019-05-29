@@ -7,7 +7,7 @@ const Navbar = ({ currentUser, logout }) => {
     return(
     <header className="header">
       <nav className="header-nav">
-        <img className="header-logo"/>
+        <div className="header-logo"/>
         <ul className="header-list">
           <li><a href="#">Become a host</a></li>
           <li><a href="#">Help</a></li>
@@ -23,7 +23,7 @@ const Navbar = ({ currentUser, logout }) => {
     return(
     <header className="header">
       <nav className="header-nav">
-        <img className="header-logo"/>
+        <div className="header-logo"/>
         <ul className="header-list">
           <li><a href="#">Become a host</a></li>
           <li><a href="#">Saved</a></li>

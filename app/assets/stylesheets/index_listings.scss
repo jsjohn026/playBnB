@@ -1,0 +1,33 @@
+h3 {
+  text-align: left;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  background: transparent;
+  padding: 0px;
+  margin-bottom: 0px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: rgb(72, 72, 72);
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+ul {
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0 auto;
+  width: auto;
+  align-items: center;
+  overflow: hidden;
+
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
