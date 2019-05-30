@@ -33,11 +33,13 @@ const Navbar = ({ currentUser, logout, openModal }) => {
           <li><a href="#">Trips</a></li>
           <li><a href="#">Messages</a></li>
           <li><a href="#">Help</a></li>
+          <li>
+          <hgroup className="header-group">
+            <div className="header-name">Hi, {currentUser.fname}!</div>
+            <button className="header-button" onClick={logout}>Log Out</button>
+          </hgroup>
+          </li>
         </ul>
-        <hgroup className="header-group">
-          <h2 className="header-name">Hi, {currentUser.fname}!</h2>
-          <button className="header-button" onClick={logout}>Log Out</button>
-        </hgroup>
       </nav>
     </header>
     );

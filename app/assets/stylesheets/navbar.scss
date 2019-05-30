@@ -1,7 +1,11 @@
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
   border-bottom: 1px solid #ccc;
-  height: 52px;
+  height: 60px;
 }
 
 .header-nav {
@@ -25,6 +29,7 @@
 
 .header-list > li:hover {
   border-bottom: 3px solid gray;
+  cursor: pointer;
 }
 
 .header-logo {
@@ -36,9 +41,10 @@
   height: 30px;
   width: 30px;
   display: inline-flex;
+  cursor: pointer;
 }
 
-.header a {
+.header a, .header-button, .login-signup {
   display: flex;
   align-items: center;
   color: inherit;
@@ -46,4 +52,12 @@
   height: 100%;
   text-decoration-line: inherit;
   box-sizing: border-box;
+}
+
+.header-button, .login-signup {
+  background: none;
+  color: inherit;
+  border: none; 
+  font: inherit;
+  cursor: pointer;
 }

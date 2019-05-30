@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900&display=swap" rel="stylesheet">
     <title>PlayBnB</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <script type="text/javascript">
+    window.photos = [ 
+      "<%= image_url("beach.jpg") %>", 
+      "<%= image_url("balcony.jpg") %>",
+      "<%= image_url("bridge.jpg") %>",
+      "<%= image_url("firehouse_loft.jpg") %>",
+      "<%= image_url("fireplace.jpg") %>",
+      "<%= image_url("french_doors.jpg") %>",
+      "<%= image_url("treetop_loft.jpg") %>",
+      "<%= image_url("twenties.jpg") %>",
+      "<%= image_url("bunks.jpg") %>",
+      "<%= image_url("orange.jpg") %>",
+      "<%= image_url("foliage.jpg") %>",
+      "<%= image_url("japanese.jpg") %>",
+      "<%= image_url("yellow.jpg") %>",
+      "<%= image_url("books.jpg") %>"
+    ]
+    </script>
   </head>
 
   <body>
