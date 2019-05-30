@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-const Navbar = ({ currentUser, logout }) => {
+const Navbar = ({ currentUser, logout, openModal }) => {
   
-  const sessionAuthLinks = () => {
+  const sessionLinks = () => {
     return(
     <header className="header">
       <nav className="header-nav">
@@ -11,8 +10,12 @@ const Navbar = ({ currentUser, logout }) => {
         <ul className="header-list">
           <li><a href="#">Become a host</a></li>
           <li><a href="#">Help</a></li>
-          <li><Link to="/signup">Sign up</Link></li>
-          <li><Link to="/login">Log In</Link></li>
+          <li><button 
+            onClick={() => openModal("signup")} 
+            className="login-signup">Sign Up</button></li>
+          <li><button 
+            onClick={() => openModal("login")} 
+            className="login-signup">Log In</button></li>
         </ul>
       </nav>
     </header>
@@ -40,7 +43,7 @@ const Navbar = ({ currentUser, logout }) => {
     );
   };
   
-  return currentUser ? sessionProtectedLinks() : sessionAuthLinks();
+  return currentUser ? sessionProtectedLinks() : sessionLinks();
 }
 
 export default Navbar;
