@@ -1,4 +1,4 @@
-# WELCOME TO PLAYBNB
+# PlayBnb
 
 [![](https://github.com/jsjohn026/playBnB/blob/master/app/assets/images/header-icon-192x192.png)](https://github.com/jsjohn026/playBnB/blob/master/app/assets/images/header-icon-192x192.png)
 
