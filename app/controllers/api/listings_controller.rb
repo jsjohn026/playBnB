@@ -7,7 +7,7 @@ class Api::ListingsController < ApplicationController
   end
 
   def index
-    listings = Listing.all
+    @listings = Listing.all
     if params[:city] && params[:max_guests]
       listings = listings.where(city: city, max_guests: max_guests)
     end
@@ -16,12 +16,12 @@ class Api::ListingsController < ApplicationController
   end
 
   def show
-    @bench = Bench.find(params[:id])
+    @listing = Listing.find(params[:id])
   end
 
   private
   def listing_params
-    params.require(:listing).permit(:name, :host_id, :description, :price, :num_bedrooms, :max_guests, :street_address, :city, :zip_code :lat, :lng)
+    params.require(:listing).permit(:name, :host_id, :description, :price, :num_bedrooms, :max_guests, :street_address, :city, :zip_code, :lat, :lng)
   end
 
 end
