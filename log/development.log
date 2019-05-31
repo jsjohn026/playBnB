@@ -21908,3 +21908,1901 @@ Processing by Api::ListingsController#index as */*
 Completed 200 OK in 212ms (Views: 209.0ms | ActiveRecord: 2.3ms)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:9
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:9
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 1]]
+  ↳ db/seeds.rb:10
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 2]]
+  ↳ db/seeds.rb:10
+  [1m[35m (39.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.5ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 3]]
+  ↳ db/seeds.rb:10
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 4]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 5]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 6]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 7]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 8]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 9]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 10]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 11]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 12]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.4ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 13]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 14]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 15]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 16]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 17]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 18]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 19]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mListing Destroy (0.3ms)[0m  [1m[31mDELETE FROM "listings" WHERE "listings"."id" = $1[0m  [["id", 20]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beyonce@beyonce.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "aC09Psvuks-qRa-bblIKWg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "beyonce@beyonce.com"], ["fname", "Beyonce"], ["lname", "Knowles"], ["password_digest", "$2a$10$UYz82FNYefIjNaJ8KcStbuuTWE9q9uVqm3POlbHHIKBKoDF1u8/Lu"], ["session_token", "aC09Psvuks-qRa-bblIKWg"], ["created_at", "2019-05-31 15:51:33.427034"], ["updated_at", "2019-05-31 15:51:33.427034"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madonna@madonna.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "64tJ8Bskd2LLAfyrLZ_Pzg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "madonna@madonna.com"], ["fname", "Madonna"], ["lname", "Ciccone"], ["password_digest", "$2a$10$4Ko1OQ71d7SQfe450F9vwumr6HQ330qU6FHjDcMkFl5PiZzgEkQeW"], ["session_token", "64tJ8Bskd2LLAfyrLZ_Pzg"], ["created_at", "2019-05-31 15:51:33.499303"], ["updated_at", "2019-05-31 15:51:33.499303"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willsmith@freshprince.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "O52sb3Q9T0PmjgpY6eLg3A"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "willsmith@freshprince.com"], ["fname", "Will"], ["lname", "Smith"], ["password_digest", "$2a$10$72wQmII5Y4Fl.GzG2DtWZOwRcibRF5HnwUsLjYYr6C6CM7H2bVNDW"], ["session_token", "O52sb3Q9T0PmjgpY6eLg3A"], ["created_at", "2019-05-31 15:51:33.569170"], ["updated_at", "2019-05-31 15:51:33.569170"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tyrian@imp.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ojs-H7izXxLgTR73RYxvbQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "tyrian@imp.com"], ["fname", "Tyrian"], ["lname", "Lannister"], ["password_digest", "$2a$10$P6IctSnyCnJUzxfMj3z7C.a5gFpEfwemOvDjXHXKKD2MsKtukXJFK"], ["session_token", "ojs-H7izXxLgTR73RYxvbQ"], ["created_at", "2019-05-31 15:51:33.639841"], ["updated_at", "2019-05-31 15:51:33.639841"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rexi@rexi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BDGajK6ND1N8oxgsRBUNeg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "rexi@rexi.com"], ["fname", "Rexi"], ["lname", "John"], ["password_digest", "$2a$10$PTjES08.vG7VbLACqtCy1.ZgvQbFQqJYRKSpMaH6VZwtRK/sEPpmG"], ["session_token", "BDGajK6ND1N8oxgsRBUNeg"], ["created_at", "2019-05-31 15:51:33.710543"], ["updated_at", "2019-05-31 15:51:33.710543"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "susi@susi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "fiyLoOOZiek8mX7JcMwuqQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "susi@susi.com"], ["fname", "Susi"], ["lname", "Hum"], ["password_digest", "$2a$10$2dQ0MBEg3quW56G5df//3.8sNCGAKX/Owc0NbKZcaeHVh9YmMjbpS"], ["session_token", "fiyLoOOZiek8mX7JcMwuqQ"], ["created_at", "2019-05-31 15:51:33.780379"], ["updated_at", "2019-05-31 15:51:33.780379"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@email.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "MvntyZQSN9gW6ljnogF7yQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demo@email.com"], ["fname", "Demo"], ["lname", "User"], ["password_digest", "$2a$10$4fzgJ/WVH3FzdmVmfuBvqO3laXyTUm6t2Tgbup1WdlVkt0IQ1.ltG"], ["session_token", "MvntyZQSN9gW6ljnogF7yQ"], ["created_at", "2019-05-31 15:51:33.850682"], ["updated_at", "2019-05-31 15:51:33.850682"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8605.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "playbnb_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (8668.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "playbnb_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE DATABASE "playbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (2.6ms)[0m  [1m[35mCREATE DATABASE "playbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (24.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (11.2ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (4.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (5.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (9.6ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2019-05-31 15:54:50.025813"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-05-31 15:54:50.032816"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beyonce@beyonce.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "neRNF_HA8pzu9ko3awiQCg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "beyonce@beyonce.com"], ["fname", "Beyonce"], ["lname", "Knowles"], ["password_digest", "$2a$10$PG6OTM3cAXngdJX4aQHKGOxUIrgK5NObqgvaIBrUemY6/g/Eymuai"], ["session_token", "neRNF_HA8pzu9ko3awiQCg"], ["created_at", "2019-05-31 15:54:50.165699"], ["updated_at", "2019-05-31 15:54:50.165699"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madonna@madonna.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "r9xVfq89wAEecEQAA8ZbVg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "madonna@madonna.com"], ["fname", "Madonna"], ["lname", "Ciccone"], ["password_digest", "$2a$10$pJjcr6jiKbRbpp.H3dyGyudmLcRM4LUe0Yt5TsNu.FVo.iwW4ZsgG"], ["session_token", "r9xVfq89wAEecEQAA8ZbVg"], ["created_at", "2019-05-31 15:54:50.235821"], ["updated_at", "2019-05-31 15:54:50.235821"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willsmith@freshprince.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5RB82pV6C6XdAx9S-9OMWw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "willsmith@freshprince.com"], ["fname", "Will"], ["lname", "Smith"], ["password_digest", "$2a$10$Z0wk0d/mHuQZ832xar5TE.Mhgobwrw6q0ULFCbPVImUPUFTMXb70W"], ["session_token", "5RB82pV6C6XdAx9S-9OMWw"], ["created_at", "2019-05-31 15:54:50.310433"], ["updated_at", "2019-05-31 15:54:50.310433"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tyrian@imp.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "CE7fxtC4IliPwnQ_7zqp8g"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "tyrian@imp.com"], ["fname", "Tyrian"], ["lname", "Lannister"], ["password_digest", "$2a$10$Ioiq3TEECqp/TAf18NgVSeWtrUa/YyZe45V1PJOjF.iOcTkX1tZyu"], ["session_token", "CE7fxtC4IliPwnQ_7zqp8g"], ["created_at", "2019-05-31 15:54:50.379499"], ["updated_at", "2019-05-31 15:54:50.379499"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rexi@rexi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W3XD-bZ0qYqLL1j2FvLI1Q"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "rexi@rexi.com"], ["fname", "Rexi"], ["lname", "John"], ["password_digest", "$2a$10$g8/7gGwmyDEAxRbsCyXRiOsOt4VGPRwnz5B.yDCgWOxwZQx.cxUk2"], ["session_token", "W3XD-bZ0qYqLL1j2FvLI1Q"], ["created_at", "2019-05-31 15:54:50.451538"], ["updated_at", "2019-05-31 15:54:50.451538"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "susi@susi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3WW1Iau6xftN0eV3Qth72A"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "susi@susi.com"], ["fname", "Susi"], ["lname", "Hum"], ["password_digest", "$2a$10$SYOB5SnIhKR8LIBoeNCA9.epVUGZJElPXNwbhwb89wS3b.YUdB0k."], ["session_token", "3WW1Iau6xftN0eV3Qth72A"], ["created_at", "2019-05-31 15:54:50.522219"], ["updated_at", "2019-05-31 15:54:50.522219"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@email.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "VI1bt9nwyGrzQ9r-1vEfCA"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demo@email.com"], ["fname", "Demo"], ["lname", "User"], ["password_digest", "$2a$10$yBr7qFMA885zfZ0IOuIuv.QlkP.Z3pRcOtkED6TylAjjPqh/jy026"], ["session_token", "VI1bt9nwyGrzQ9r-1vEfCA"], ["created_at", "2019-05-31 15:54:50.592442"], ["updated_at", "2019-05-31 15:54:50.592442"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.7ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Oasis"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1234 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 15:54:50.617954"], ["updated_at", "2019-05-31 15:54:50.617954"], ["lat", 37.766432], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (40.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Paradise"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4321 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 15:54:50.663086"], ["updated_at", "2019-05-31 15:54:50.663086"], ["lat", 37.776665], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Doghouse"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4343 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:54:50.668507"], ["updated_at", "2019-05-31 15:54:50.668507"], ["lat", 37.745171], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Fort"], ["host_id", "4"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2397 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 15:54:50.672020"], ["updated_at", "2019-05-31 15:54:50.672020"], ["lat", 37.762246], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Rafts"], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9988 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:54:50.674925"], ["updated_at", "2019-05-31 15:54:50.674925"], ["lat", 37.762836], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sandwich Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff sandwiches"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1600 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 15:54:50.677734"], ["updated_at", "2019-05-31 15:54:50.677734"], ["lat", 37.784532], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bunker"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "200 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:54:50.680801"], ["updated_at", "2019-05-31 15:54:50.680801"], ["lat", 37.784529], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorian"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "34 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:54:50.684226"], ["updated_at", "2019-05-31 15:54:50.684226"], ["lat", 37.741331], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Bunk"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2407 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 15:54:50.687592"], ["updated_at", "2019-05-31 15:54:50.687592"], ["lat", 37.758547], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Living"], ["host_id", "4"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3901 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 15:54:50.690577"], ["updated_at", "2019-05-31 15:54:50.690577"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Perch"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1233 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 15:54:50.693576"], ["updated_at", "2019-05-31 15:54:50.693576"], ["lat", 37.766431], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Wharf"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4320 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 15:54:50.696386"], ["updated_at", "2019-05-31 15:54:50.696386"], ["lat", 37.776664], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Park"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4342 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:54:50.698897"], ["updated_at", "2019-05-31 15:54:50.698897"], ["lat", 37.74517], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Space"], ["host_id", "5"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2396 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 15:54:50.701391"], ["updated_at", "2019-05-31 15:54:50.701391"], ["lat", 37.762245], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Pier "], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9987 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:54:50.704192"], ["updated_at", "2019-05-31 15:54:50.704192"], ["lat", 37.762835], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Pizza Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff pizza"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1500 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 15:54:50.706603"], ["updated_at", "2019-05-31 15:54:50.706603"], ["lat", 37.784531], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bulkhead"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "198 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:54:50.708960"], ["updated_at", "2019-05-31 15:54:50.708960"], ["lat", 37.784528], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorious"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "33 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:54:50.711900"], ["updated_at", "2019-05-31 15:54:50.711900"], ["lat", 37.74133], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Couch"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2406 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 15:54:50.714646"], ["updated_at", "2019-05-31 15:54:50.714646"], ["lat", 37.758567], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Breezes"], ["host_id", "5"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3902 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 15:54:50.717103"], ["updated_at", "2019-05-31 15:54:50.717103"], ["lat", 37.761134], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Shiny and New"], ["host_id", "3"], ["description", "inspired by my childhood: In West Philadelphia, born and raised."], ["price", 355], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "25 West Philly Road"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:54:50.719608"], ["updated_at", "2019-05-31 15:54:50.719608"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Red Keep"], ["host_id", "4"], ["description", "Check out my weird sister's rad castle"], ["price", 1555], ["num_bedrooms", 20], ["max_guests", 16], ["street_address", "2465 Kings Landing Street"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:54:50.722296"], ["updated_at", "2019-05-31 15:54:50.722296"], ["lat", 37.761567], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Wall"], ["host_id", "4"], ["description", "White view and dead silence. Recently renovated."], ["price", 25], ["num_bedrooms", 5], ["max_guests", 20], ["street_address", "1 Icy Lane"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:54:50.725027"], ["updated_at", "2019-05-31 15:54:50.725027"], ["lat", 37.761567], ["lng", -122.431268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Winterfell"], ["host_id", "4"], ["description", "Ex-wife's dark and chilly castle with lots of old memories"], ["price", 1200], ["num_bedrooms", 12], ["max_guests", 45], ["street_address", "15 Windy Lane"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:54:50.727512"], ["updated_at", "2019-05-31 15:54:50.727512"], ["lat", 37.761567], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE DATABASE "playbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE DATABASE "playbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (47.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (46.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.9ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2019-05-31 15:56:15.586441"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-05-31 15:56:15.592745"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beyonce@beyonce.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "ynf2VA-1uXLJgMp500ib8w"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "beyonce@beyonce.com"], ["fname", "Beyonce"], ["lname", "Knowles"], ["password_digest", "$2a$10$Xik.frn69slsCbkF8ZEw5uQqdv67rf5/Fz9eM6fdoa16RNVMYvDwK"], ["session_token", "ynf2VA-1uXLJgMp500ib8w"], ["created_at", "2019-05-31 15:56:15.725276"], ["updated_at", "2019-05-31 15:56:15.725276"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madonna@madonna.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "dCszaEFqY3bbBrg_p0PMGg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "madonna@madonna.com"], ["fname", "Madonna"], ["lname", "Ciccone"], ["password_digest", "$2a$10$qcKUgqODZx69W6wSMDgDS.h6wR8FmlSpSFnpb5MorUhhxa9.umVsC"], ["session_token", "dCszaEFqY3bbBrg_p0PMGg"], ["created_at", "2019-05-31 15:56:15.797758"], ["updated_at", "2019-05-31 15:56:15.797758"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willsmith@freshprince.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "696oiux2M5PBemieKEw2Pw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "willsmith@freshprince.com"], ["fname", "Will"], ["lname", "Smith"], ["password_digest", "$2a$10$XYlbWBtKN16GgGaHsPGc9.y.PWPO2itf9.xUq.OBEAD6g0j2k8Udi"], ["session_token", "696oiux2M5PBemieKEw2Pw"], ["created_at", "2019-05-31 15:56:15.868771"], ["updated_at", "2019-05-31 15:56:15.868771"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tyrian@imp.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "AeS5ZW16ILzB083psAR96A"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "tyrian@imp.com"], ["fname", "Tyrian"], ["lname", "Lannister"], ["password_digest", "$2a$10$eZ58C4ooNs.93La2k47hkezCOeyOzN8NAqC3IDEunWyUbwa9//6li"], ["session_token", "AeS5ZW16ILzB083psAR96A"], ["created_at", "2019-05-31 15:56:15.937942"], ["updated_at", "2019-05-31 15:56:15.937942"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rexi@rexi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "I7ymT-B8r_SYLgjf-s5W0Q"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "rexi@rexi.com"], ["fname", "Rexi"], ["lname", "John"], ["password_digest", "$2a$10$TQk5ZjRK4Jo9CQJh9LwVKuBIxrjFkYMILpf/R.6aVKkckbHtccfe6"], ["session_token", "I7ymT-B8r_SYLgjf-s5W0Q"], ["created_at", "2019-05-31 15:56:16.008536"], ["updated_at", "2019-05-31 15:56:16.008536"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "susi@susi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "zD-w6Fva5ITarLUEq6M9Qg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "susi@susi.com"], ["fname", "Susi"], ["lname", "Hum"], ["password_digest", "$2a$10$R2WsKnwq6ngzsgTs4rBt1.itW821/xm70dzBHf5DuhBgr3p4R6ClO"], ["session_token", "zD-w6Fva5ITarLUEq6M9Qg"], ["created_at", "2019-05-31 15:56:16.079377"], ["updated_at", "2019-05-31 15:56:16.079377"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@email.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "4mzfuJN9MyuUIf5FPBnp_w"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demo@email.com"], ["fname", "Demo"], ["lname", "User"], ["password_digest", "$2a$10$TwQ5rJpKnyYtVzuy2.T0lu.lon6Lguj8cT/lohMKHcBA17574/D32"], ["session_token", "4mzfuJN9MyuUIf5FPBnp_w"], ["created_at", "2019-05-31 15:56:16.149131"], ["updated_at", "2019-05-31 15:56:16.149131"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.8ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Oasis"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1234 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 15:56:16.173256"], ["updated_at", "2019-05-31 15:56:16.173256"], ["lat", 37.766432], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Paradise"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4321 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 15:56:16.218413"], ["updated_at", "2019-05-31 15:56:16.218413"], ["lat", 37.776665], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Doghouse"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4343 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:56:16.224007"], ["updated_at", "2019-05-31 15:56:16.224007"], ["lat", 37.745171], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Fort"], ["host_id", "4"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2397 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 15:56:16.227284"], ["updated_at", "2019-05-31 15:56:16.227284"], ["lat", 37.762246], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Rafts"], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9988 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:56:16.229985"], ["updated_at", "2019-05-31 15:56:16.229985"], ["lat", 37.762836], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sandwich Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff sandwiches"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1600 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 15:56:16.233033"], ["updated_at", "2019-05-31 15:56:16.233033"], ["lat", 37.784532], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bunker"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "200 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:56:16.235592"], ["updated_at", "2019-05-31 15:56:16.235592"], ["lat", 37.784529], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorian"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "34 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:56:16.238557"], ["updated_at", "2019-05-31 15:56:16.238557"], ["lat", 37.741331], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Bunk"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2407 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 15:56:16.241490"], ["updated_at", "2019-05-31 15:56:16.241490"], ["lat", 37.758547], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Living"], ["host_id", "4"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3901 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 15:56:16.244098"], ["updated_at", "2019-05-31 15:56:16.244098"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Perch"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1233 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 15:56:16.246453"], ["updated_at", "2019-05-31 15:56:16.246453"], ["lat", 37.766431], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Wharf"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4320 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 15:56:16.248830"], ["updated_at", "2019-05-31 15:56:16.248830"], ["lat", 37.776664], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Park"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4342 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:56:16.251567"], ["updated_at", "2019-05-31 15:56:16.251567"], ["lat", 37.74517], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Space"], ["host_id", "5"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2396 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 15:56:16.253990"], ["updated_at", "2019-05-31 15:56:16.253990"], ["lat", 37.762245], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Pier "], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9987 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:56:16.256482"], ["updated_at", "2019-05-31 15:56:16.256482"], ["lat", 37.762835], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Pizza Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff pizza"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1500 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 15:56:16.259273"], ["updated_at", "2019-05-31 15:56:16.259273"], ["lat", 37.784531], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bulkhead"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "198 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:56:16.262426"], ["updated_at", "2019-05-31 15:56:16.262426"], ["lat", 37.784528], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorious"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "33 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:56:16.265395"], ["updated_at", "2019-05-31 15:56:16.265395"], ["lat", 37.74133], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Couch"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2406 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 15:56:16.268220"], ["updated_at", "2019-05-31 15:56:16.268220"], ["lat", 37.758567], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Breezes"], ["host_id", "5"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3902 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 15:56:16.270808"], ["updated_at", "2019-05-31 15:56:16.270808"], ["lat", 37.761134], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Shiny and New"], ["host_id", "3"], ["description", "inspired by my childhood: In West Philadelphia, born and raised."], ["price", 355], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "25 West Philly Road"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 15:56:16.274467"], ["updated_at", "2019-05-31 15:56:16.274467"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Red Keep"], ["host_id", "4"], ["description", "Check out my weird sister's rad castle"], ["price", 1555], ["num_bedrooms", 20], ["max_guests", 16], ["street_address", "2465 Kings Landing Street"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 15:56:16.277616"], ["updated_at", "2019-05-31 15:56:16.277616"], ["lat", 37.761567], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Wall"], ["host_id", "4"], ["description", "White view and dead silence. Recently renovated."], ["price", 25], ["num_bedrooms", 5], ["max_guests", 20], ["street_address", "1 Icy Lane"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 15:56:16.280978"], ["updated_at", "2019-05-31 15:56:16.280978"], ["lat", 37.761567], ["lng", -122.431268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Winterfell"], ["host_id", "4"], ["description", "Ex-wife's dark and chilly castle with lots of old memories"], ["price", 1200], ["num_bedrooms", 12], ["max_guests", 45], ["street_address", "15 Windy Lane"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 15:56:16.283960"], ["updated_at", "2019-05-31 15:56:16.283960"], ["lat", 37.761567], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE DATABASE "playbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE DATABASE "playbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (6.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (4.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2019-05-31 16:07:51.805126"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-05-31 16:07:51.811247"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beyonce@beyonce.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "QHQAh4mAmgBPmGLIghMfuQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "beyonce@beyonce.com"], ["fname", "Beyonce"], ["lname", "Knowles"], ["password_digest", "$2a$10$4VK8R/ksUiiaMeTdtxWfSuE3B/dylCT3rvbuzWihonCk2TT2D5lKS"], ["session_token", "QHQAh4mAmgBPmGLIghMfuQ"], ["created_at", "2019-05-31 16:07:51.945062"], ["updated_at", "2019-05-31 16:07:51.945062"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madonna@madonna.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "GfANvdFeBzHRJxW4QlHeFw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "madonna@madonna.com"], ["fname", "Madonna"], ["lname", "Ciccone"], ["password_digest", "$2a$10$gBo7U3VYKSsny7ufRn46Uu9iERhGeaaW6zkjuiWWMHPhtROBPH.Qy"], ["session_token", "GfANvdFeBzHRJxW4QlHeFw"], ["created_at", "2019-05-31 16:07:52.016624"], ["updated_at", "2019-05-31 16:07:52.016624"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willsmith@freshprince.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "DebHEKhdAb6KNbIFAf_G3g"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "willsmith@freshprince.com"], ["fname", "Will"], ["lname", "Smith"], ["password_digest", "$2a$10$C21U1vM7oBMArY83NXTGKex6kfxeDXPUllZiMTcBjoCY5ht4nA99C"], ["session_token", "DebHEKhdAb6KNbIFAf_G3g"], ["created_at", "2019-05-31 16:07:52.085568"], ["updated_at", "2019-05-31 16:07:52.085568"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tyrian@imp.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "v6swwQSY78Y48vedXfCzzA"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "tyrian@imp.com"], ["fname", "Tyrian"], ["lname", "Lannister"], ["password_digest", "$2a$10$n/RQDXABdcQAFJPcXPPSzOu2xRtNKOi8YS5IA8uvt5GZBfBBYIzXS"], ["session_token", "v6swwQSY78Y48vedXfCzzA"], ["created_at", "2019-05-31 16:07:52.155690"], ["updated_at", "2019-05-31 16:07:52.155690"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rexi@rexi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "Vf_C1zgRC54Mn2EoJoocsw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "rexi@rexi.com"], ["fname", "Rexi"], ["lname", "John"], ["password_digest", "$2a$10$otIeSOw4bwY/cO6/pcs5Peqya6IO7FopUyva.m50l7ABxMSjMXksC"], ["session_token", "Vf_C1zgRC54Mn2EoJoocsw"], ["created_at", "2019-05-31 16:07:52.226948"], ["updated_at", "2019-05-31 16:07:52.226948"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "susi@susi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "vX3xr53SEkD5BkiPK5ZFFg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "susi@susi.com"], ["fname", "Susi"], ["lname", "Hum"], ["password_digest", "$2a$10$VaHZz7.cEWGStXHsJvh1i.FLTlNQTP/no2rruPDu5m0u4rTGyWReW"], ["session_token", "vX3xr53SEkD5BkiPK5ZFFg"], ["created_at", "2019-05-31 16:07:52.297943"], ["updated_at", "2019-05-31 16:07:52.297943"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@email.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "1cNVRFiaGorpMTtw8LfgRg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demo@email.com"], ["fname", "Demo"], ["lname", "User"], ["password_digest", "$2a$10$tm5qsie/BQ92wAVBYumBnO7w8tvr7tpQkFJo6lLui.mvcLGczqRom"], ["session_token", "1cNVRFiaGorpMTtw8LfgRg"], ["created_at", "2019-05-31 16:07:52.367785"], ["updated_at", "2019-05-31 16:07:52.367785"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.7ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Oasis"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1234 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 16:07:52.389412"], ["updated_at", "2019-05-31 16:07:52.389412"], ["lat", 37.766432], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Paradise"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4321 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 16:07:52.393127"], ["updated_at", "2019-05-31 16:07:52.393127"], ["lat", 37.776665], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.5ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Doghouse"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4343 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:07:52.396317"], ["updated_at", "2019-05-31 16:07:52.396317"], ["lat", 37.745171], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Fort"], ["host_id", "4"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2397 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 16:07:52.399589"], ["updated_at", "2019-05-31 16:07:52.399589"], ["lat", 37.762246], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Rafts"], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9988 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:07:52.402707"], ["updated_at", "2019-05-31 16:07:52.402707"], ["lat", 37.762836], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sandwich Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff sandwiches"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1600 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 16:07:52.406577"], ["updated_at", "2019-05-31 16:07:52.406577"], ["lat", 37.784532], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bunker"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "200 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:07:52.409567"], ["updated_at", "2019-05-31 16:07:52.409567"], ["lat", 37.784529], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorian"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "34 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:07:52.412158"], ["updated_at", "2019-05-31 16:07:52.412158"], ["lat", 37.741331], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Bunk"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2407 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 16:07:52.414849"], ["updated_at", "2019-05-31 16:07:52.414849"], ["lat", 37.758547], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Living"], ["host_id", "4"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3901 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 16:07:52.417495"], ["updated_at", "2019-05-31 16:07:52.417495"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Perch"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1233 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 16:07:52.420054"], ["updated_at", "2019-05-31 16:07:52.420054"], ["lat", 37.766431], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Wharf"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4320 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 16:07:52.422734"], ["updated_at", "2019-05-31 16:07:52.422734"], ["lat", 37.776664], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Park"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4342 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:07:52.425282"], ["updated_at", "2019-05-31 16:07:52.425282"], ["lat", 37.74517], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Space"], ["host_id", "5"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2396 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 16:07:52.427569"], ["updated_at", "2019-05-31 16:07:52.427569"], ["lat", 37.762245], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Pier "], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9987 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:07:52.429782"], ["updated_at", "2019-05-31 16:07:52.429782"], ["lat", 37.762835], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Pizza Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff pizza"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1500 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 16:07:52.432241"], ["updated_at", "2019-05-31 16:07:52.432241"], ["lat", 37.784531], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bulkhead"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "198 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:07:52.434693"], ["updated_at", "2019-05-31 16:07:52.434693"], ["lat", 37.784528], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorious"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "33 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:07:52.437136"], ["updated_at", "2019-05-31 16:07:52.437136"], ["lat", 37.74133], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Couch"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2406 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 16:07:52.440221"], ["updated_at", "2019-05-31 16:07:52.440221"], ["lat", 37.758567], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Breezes"], ["host_id", "5"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3902 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 16:07:52.443050"], ["updated_at", "2019-05-31 16:07:52.443050"], ["lat", 37.761134], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Shiny and New"], ["host_id", "3"], ["description", "Inspired by my childhood: In West Philadelphia, born and raised."], ["price", 355], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "25 West Philly Road"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:07:52.445799"], ["updated_at", "2019-05-31 16:07:52.445799"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Red Keep"], ["host_id", "4"], ["description", "Check out my weird sister's rad castle. It's cool, she's out of town."], ["price", 1555], ["num_bedrooms", 20], ["max_guests", 16], ["street_address", "2465 Kings Landing Street"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:07:52.448550"], ["updated_at", "2019-05-31 16:07:52.448550"], ["lat", 37.761567], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Wall"], ["host_id", "4"], ["description", "White view and dead silence. Recently renovated."], ["price", 25], ["num_bedrooms", 5], ["max_guests", 20], ["street_address", "1 Icy Lane"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:07:52.451114"], ["updated_at", "2019-05-31 16:07:52.451114"], ["lat", 37.761567], ["lng", -122.431268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Winterfell"], ["host_id", "4"], ["description", "Ex-wife's dark and chilly castle with lots of old memories"], ["price", 1200], ["num_bedrooms", 12], ["max_guests", 45], ["street_address", "15 Windy Lane"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:07:52.453875"], ["updated_at", "2019-05-31 16:07:52.453875"], ["lat", 37.761567], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Casterly Rock"], ["host_id", "4"], ["description", "Fond memories of my childhood to peruse. Be sure to check out my dad's gravesite"], ["price", 2200], ["num_bedrooms", 28], ["max_guests", 48], ["street_address", "1690 Moneybags Lane"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:07:52.456391"], ["updated_at", "2019-05-31 16:07:52.456391"], ["lat", 37.768453], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Formation Station"], ["host_id", "1"], ["description", "Organized, strong, and feminine digs for you and your crew"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 10], ["street_address", "100 Flowing Hair Blvd"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:07:52.458863"], ["updated_at", "2019-05-31 16:07:52.458863"], ["lat", 37.768453], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fashion Palace"], ["host_id", "1"], ["description", "Closet takes up most of the space and has plenty of fashionable outfits for you to try"], ["price", 250], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "200 Boots Blvd"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:07:52.461589"], ["updated_at", "2019-05-31 16:07:52.461589"], ["lat", 37.768453], ["lng", -122.434856]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Musical Paradise"], ["host_id", "1"], ["description", "Every instrument you can imagine is available for you to play"], ["price", 276], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "5162 Notes Lane"], ["city", "San Francisco"], ["zip_code", "94127"], ["created_at", "2019-05-31 16:07:52.464491"], ["updated_at", "2019-05-31 16:07:52.464491"], ["lat", 37.768453], ["lng", -122.436556]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE DATABASE "playbnb_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE DATABASE "playbnb_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (5.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (2.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (4.4ms)[0m  [1m[35mDROP TABLE IF EXISTS "listings" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "listings" ("id" bigserial primary key, "name" character varying NOT NULL, "host_id" character varying NOT NULL, "description" text NOT NULL, "price" integer NOT NULL, "num_bedrooms" integer NOT NULL, "max_guests" integer NOT NULL, "street_address" character varying NOT NULL, "city" character varying NOT NULL, "zip_code" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "lat" float NOT NULL, "lng" float NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_city" ON "listings"  ("city")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_host_id" ON "listings"  ("host_id")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE  INDEX  "index_listings_on_zip_code" ON "listings"  ("zip_code")[0m
+  ↳ db/schema.rb:18
+  [1m[35m (3.8ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  ↳ db/schema.rb:37
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "fname" character varying NOT NULL, "lname" character varying NOT NULL, "password_digest" character varying NOT NULL, "session_token" character varying NOT NULL, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_session_token" ON "users"  ("session_token")[0m
+  ↳ db/schema.rb:37
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "development"], ["updated_at", "2019-05-31 16:11:57.907407"], ["key", "environment"]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2019-05-31 16:11:57.914286"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ db/seeds.rb:9
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "beyonce@beyonce.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "2de74PEUq9aEvbfMPdMfnQ"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "beyonce@beyonce.com"], ["fname", "Beyonce"], ["lname", "Knowles"], ["password_digest", "$2a$10$5QMl/dRX87mpROSzXJXt9OMfSy//EFwaSoXg9gHtLZMlB4hTVzVLS"], ["session_token", "2de74PEUq9aEvbfMPdMfnQ"], ["created_at", "2019-05-31 16:11:58.049634"], ["updated_at", "2019-05-31 16:11:58.049634"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "madonna@madonna.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "W0R43KgX6hR43kAKUNK01Q"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "madonna@madonna.com"], ["fname", "Madonna"], ["lname", "Ciccone"], ["password_digest", "$2a$10$GJUTu9X9SSjLtGDxWNuxmu1wARPZ8FBq.B0KkfwP8MVPvOL0//FG6"], ["session_token", "W0R43KgX6hR43kAKUNK01Q"], ["created_at", "2019-05-31 16:11:58.120037"], ["updated_at", "2019-05-31 16:11:58.120037"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "willsmith@freshprince.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "IVi4zsSiygJ19abGgPz4aw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "willsmith@freshprince.com"], ["fname", "Will"], ["lname", "Smith"], ["password_digest", "$2a$10$BrQ3ul19NCuUq9tr7swZiO3iZUw/l3nrUBBylTgA2/kus4KZVmXkO"], ["session_token", "IVi4zsSiygJ19abGgPz4aw"], ["created_at", "2019-05-31 16:11:58.190788"], ["updated_at", "2019-05-31 16:11:58.190788"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "tyrian@imp.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "9txbm4t50dzlJfsOpF02LA"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "tyrian@imp.com"], ["fname", "Tyrian"], ["lname", "Lannister"], ["password_digest", "$2a$10$BUHB6BdC6C9Bg.6OB26nduiJXYFZgwYy4JtE5OZAh7mV04nNF9NGi"], ["session_token", "9txbm4t50dzlJfsOpF02LA"], ["created_at", "2019-05-31 16:11:58.260984"], ["updated_at", "2019-05-31 16:11:58.260984"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "rexi@rexi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "3XfqF4ms3tpgvhXnTZNVug"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "rexi@rexi.com"], ["fname", "Rexi"], ["lname", "John"], ["password_digest", "$2a$10$qA3L.FXCXF42eyRX9m3C4OZhh7puuBnES3tFfY33gSqu6zjjwmpCS"], ["session_token", "3XfqF4ms3tpgvhXnTZNVug"], ["created_at", "2019-05-31 16:11:58.331754"], ["updated_at", "2019-05-31 16:11:58.331754"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "susi@susi.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "bIDdRSI4-9MaH7UpwzD_Vg"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "susi@susi.com"], ["fname", "Susi"], ["lname", "Hum"], ["password_digest", "$2a$10$mh.XLVqQYg1ANpfrC/xr4OJENXj7PxX4GZGd54JB92eD34Uw2U/ZC"], ["session_token", "bIDdRSI4-9MaH7UpwzD_Vg"], ["created_at", "2019-05-31 16:11:58.402855"], ["updated_at", "2019-05-31 16:11:58.402855"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "demo@email.com"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "sGyn_Z6MW4ExU93v676DRw"], ["LIMIT", 1]]
+  ↳ db/seeds.rb:13
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "fname", "lname", "password_digest", "session_token", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["email", "demo@email.com"], ["fname", "Demo"], ["lname", "User"], ["password_digest", "$2a$10$l0Ku1RFkWYKcrzjOVtkYb.dCpvNt7eIwyGXzXvlNPLo1q4htrwUGi"], ["session_token", "sGyn_Z6MW4ExU93v676DRw"], ["created_at", "2019-05-31 16:11:58.473273"], ["updated_at", "2019-05-31 16:11:58.473273"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.8ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Oasis"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1234 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 16:11:58.494938"], ["updated_at", "2019-05-31 16:11:58.494938"], ["lat", 37.766432], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Paradise"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4321 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 16:11:58.498609"], ["updated_at", "2019-05-31 16:11:58.498609"], ["lat", 37.776665], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Doghouse"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4343 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:11:58.501412"], ["updated_at", "2019-05-31 16:11:58.501412"], ["lat", 37.745171], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Fort"], ["host_id", "4"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2397 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 16:11:58.504711"], ["updated_at", "2019-05-31 16:11:58.504711"], ["lat", 37.762246], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Rafts"], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9988 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:11:58.508189"], ["updated_at", "2019-05-31 16:11:58.508189"], ["lat", 37.762836], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sandwich Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff sandwiches"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1600 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 16:11:58.511730"], ["updated_at", "2019-05-31 16:11:58.511730"], ["lat", 37.784532], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bunker"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "200 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:11:58.514746"], ["updated_at", "2019-05-31 16:11:58.514746"], ["lat", 37.784529], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorian"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "34 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:11:58.517565"], ["updated_at", "2019-05-31 16:11:58.517565"], ["lat", 37.741331], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Bunk"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2407 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 16:11:58.519923"], ["updated_at", "2019-05-31 16:11:58.519923"], ["lat", 37.758547], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Living"], ["host_id", "4"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3901 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 16:11:58.522510"], ["updated_at", "2019-05-31 16:11:58.522510"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treetop Perch"], ["host_id", "1"], ["description", "A quiet lofty spot to rest your tired wings"], ["price", 45], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "1233 Sesame Street"], ["city", "San Francisco"], ["zip_code", "94143"], ["created_at", "2019-05-31 16:11:58.524860"], ["updated_at", "2019-05-31 16:11:58.524860"], ["lat", 37.766431], ["lng", -122.393623]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fishermans Wharf"], ["host_id", "2"], ["description", "A lovely dockside patch to fish for a while."], ["price", 5], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4320 Freshbait Road"], ["city", "San Francisco"], ["zip_code", "94064"], ["created_at", "2019-05-31 16:11:58.527452"], ["updated_at", "2019-05-31 16:11:58.527452"], ["lat", 37.776664], ["lng", -122.448916]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.8ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Dogpatch Park"], ["host_id", "3"], ["description", "Breezy one room with plenty of water and jerky"], ["price", 18], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "4342 Doggo Drive"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:11:58.533511"], ["updated_at", "2019-05-31 16:11:58.533511"], ["lat", 37.74517], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Firehouse Space"], ["host_id", "5"], ["description", "Views of the bay far and wide"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "2396 Fiero Lane"], ["city", "San Francisco"], ["zip_code", "94104"], ["created_at", "2019-05-31 16:11:58.538551"], ["updated_at", "2019-05-31 16:11:58.538551"], ["lat", 37.762245], ["lng", -122.40154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Harbor Pier "], ["host_id", "1"], ["description", "Serene floating paradise to lay out in the sun"], ["price", 110], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "9987 Ocean Avenue"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:11:58.541246"], ["updated_at", "2019-05-31 16:11:58.541246"], ["lat", 37.762835], ["lng", -122.50043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Pizza Alley"], ["host_id", "3"], ["description", "A peaceful alley to rest your feet and sniff pizza"], ["price", 67], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "1500 Pennsylvania Ave"], ["city", "San Francisco"], ["zip_code", "94117"], ["created_at", "2019-05-31 16:11:58.543950"], ["updated_at", "2019-05-31 16:11:58.543950"], ["lat", 37.784531], ["lng", -122.438261]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Bay Bridge Bulkhead"], ["host_id", "5"], ["description", "Waterside beds and serene cave sounds under the bridge"], ["price", 42], ["num_bedrooms", 2], ["max_guests", 2], ["street_address", "198 Baystreet"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:11:58.546932"], ["updated_at", "2019-05-31 16:11:58.546932"], ["lat", 37.784528], ["lng", -122.438268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Victor Victorious"], ["host_id", "3"], ["description", "Charming Victorian home high on a hill with sweeping views, a garden, and a deck"], ["price", 42], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "33 Beacon Street"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:11:58.549489"], ["updated_at", "2019-05-31 16:11:58.549489"], ["lat", 37.74133], ["lng", -122.432154]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Treat Street Couch"], ["host_id", "5"], ["description", "Stick with the rest of the pack in a bunk in a shared space"], ["price", 59], ["num_bedrooms", 1], ["max_guests", 1], ["street_address", "2406 Treat Street"], ["city", "San Francisco"], ["zip_code", "94110"], ["created_at", "2019-05-31 16:11:58.551997"], ["updated_at", "2019-05-31 16:11:58.551997"], ["lat", 37.758567], ["lng", -122.412341]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Sunny Lofty Breezes"], ["host_id", "5"], ["description", "A sunny living room in a loft with great views of the city"], ["price", 55], ["num_bedrooms", 1], ["max_guests", 2], ["street_address", "3902 18th Street"], ["city", "San Francisco"], ["zip_code", "94114"], ["created_at", "2019-05-31 16:11:58.555014"], ["updated_at", "2019-05-31 16:11:58.555014"], ["lat", 37.761134], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Shiny and New"], ["host_id", "3"], ["description", "Inspired by my childhood: In West Philadelphia, born and raised."], ["price", 355], ["num_bedrooms", 4], ["max_guests", 8], ["street_address", "25 West Philly Road"], ["city", "San Francisco"], ["zip_code", "94131"], ["created_at", "2019-05-31 16:11:58.557902"], ["updated_at", "2019-05-31 16:11:58.557902"], ["lat", 37.761133], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Red Keep"], ["host_id", "4"], ["description", "Check out my weird sister's rad castle. It's cool, she's out of town."], ["price", 1555], ["num_bedrooms", 20], ["max_guests", 16], ["street_address", "2465 Kings Landing Street"], ["city", "San Francisco"], ["zip_code", "94133"], ["created_at", "2019-05-31 16:11:58.560766"], ["updated_at", "2019-05-31 16:11:58.560766"], ["lat", 37.761567], ["lng", -122.431876]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "The Wall"], ["host_id", "4"], ["description", "White view and dead silence. Recently renovated."], ["price", 25], ["num_bedrooms", 5], ["max_guests", 20], ["street_address", "1 Icy Lane"], ["city", "San Francisco"], ["zip_code", "94103"], ["created_at", "2019-05-31 16:11:58.563409"], ["updated_at", "2019-05-31 16:11:58.563409"], ["lat", 37.761567], ["lng", -122.431268]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.4ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Winterfell"], ["host_id", "4"], ["description", "Ex-wife's dark and chilly castle with lots of old memories"], ["price", 1200], ["num_bedrooms", 12], ["max_guests", 45], ["street_address", "15 Windy Lane"], ["city", "San Francisco"], ["zip_code", "94124"], ["created_at", "2019-05-31 16:11:58.565794"], ["updated_at", "2019-05-31 16:11:58.565794"], ["lat", 37.761567], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Casterly Rock"], ["host_id", "4"], ["description", "Fond memories of my childhood to peruse. Be sure to check out my dad's gravesite"], ["price", 2200], ["num_bedrooms", 28], ["max_guests", 48], ["street_address", "1690 Moneybags Lane"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:11:58.568373"], ["updated_at", "2019-05-31 16:11:58.568373"], ["lat", 37.768453], ["lng", -122.43043]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Formation Station"], ["host_id", "1"], ["description", "Organized, strong, and feminine digs for you and your crew"], ["price", 200], ["num_bedrooms", 4], ["max_guests", 10], ["street_address", "100 Flowing Hair Blvd"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:11:58.570822"], ["updated_at", "2019-05-31 16:11:58.570822"], ["lat", 37.768453], ["lng", -122.434866]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Fashion Palace"], ["host_id", "1"], ["description", "Closet takes up most of the space and has plenty of fashionable outfits for you to try"], ["price", 250], ["num_bedrooms", 4], ["max_guests", 4], ["street_address", "200 Boots Blvd"], ["city", "San Francisco"], ["zip_code", "94128"], ["created_at", "2019-05-31 16:11:58.573304"], ["updated_at", "2019-05-31 16:11:58.573304"], ["lat", 37.768453], ["lng", -122.434856]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:24
+  [1m[36mListing Create (0.3ms)[0m  [1m[32mINSERT INTO "listings" ("name", "host_id", "description", "price", "num_bedrooms", "max_guests", "street_address", "city", "zip_code", "created_at", "updated_at", "lat", "lng") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING "id"[0m  [["name", "Musical Paradise"], ["host_id", "1"], ["description", "Every instrument you can imagine is available for you to play"], ["price", 276], ["num_bedrooms", 3], ["max_guests", 4], ["street_address", "5162 Notes Lane"], ["city", "San Francisco"], ["zip_code", "94127"], ["created_at", "2019-05-31 16:11:58.576100"], ["updated_at", "2019-05-31 16:11:58.576100"], ["lat", 37.768453], ["lng", -122.436556]]
+  ↳ db/seeds.rb:24
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24

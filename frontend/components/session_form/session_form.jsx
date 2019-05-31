@@ -34,9 +34,19 @@ class SessionForm extends React.Component {
     )
   }
 
+  demo() {
+    this.setState({
+      email: "demo@email.com",
+      fname: "Demo",
+      lname: "User",
+      password: "password"
+    })
+  }
+
   render() {
     let name;
     let formName = "Log in";
+    let formClass = "login-form-box";
 
     if (this.props.formType === "signup") {
       name =( 
@@ -60,12 +70,13 @@ class SessionForm extends React.Component {
         </>
       )
       formName = "Sign up";
+      formClass = "signup-form-box";
     }
     // use fragments to wrap 
 
     return (
       <div className="login-form-container">
-        <form onSubmit={this.handleSubmit} className="login-form-box">
+        <form onSubmit={this.handleSubmit} className={formClass}>
           <div className="welcome">
           {formName} to continue or {this.props.otherForm}
           </div><br />
@@ -73,6 +84,7 @@ class SessionForm extends React.Component {
           {this.renderErrors()}
           <div className="login-form"><br/>
             {name}
+
             <label>
               <input type="text" 
               value={this.state.email} 
@@ -81,6 +93,7 @@ class SessionForm extends React.Component {
               className="login-input"/>
             </label>
             <br/>
+
             <label>
               <input type="password" 
               value={this.state.password} 
@@ -90,9 +103,15 @@ class SessionForm extends React.Component {
               />
             </label>
             <br/>
+
             <label>
             <input className="session-submit" type="submit" value={formName}/>
             </label>
+
+            <label>
+              <button onClick={this.demo.bind(this)} className="demo-user">Demo User</button>
+            </label>
+
           </div>
         </form>
       </div>
