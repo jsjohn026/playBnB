@@ -34,13 +34,15 @@ class SessionForm extends React.Component {
     )
   }
 
-  demo() {
-    this.setState({
+  demo(e) {
+    e.preventDefault();
+    
+    this.props.login({
       email: "demo@email.com",
       fname: "Demo",
       lname: "User",
       password: "password"
-    })
+    }).then(this.props.closeModal);
   }
 
   render() {

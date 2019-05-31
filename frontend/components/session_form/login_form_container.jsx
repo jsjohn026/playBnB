@@ -23,7 +23,8 @@ const mapDispatchToProps = dispatch => {
       </div>
     ), 
     closeModal: () => dispatch(closeModal()),
-    clearErrors: () => dispatch(clearErrors())
+    clearErrors: () => dispatch(clearErrors()), 
+    login: (user) => dispatch(login(user))
   }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(SessionForm);
