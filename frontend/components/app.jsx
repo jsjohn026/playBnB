@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import NavbarContainer from "./navbar/navbar_container";
 import ListingIndexContainer from "./listing_index_container";
 import Modal from "./modal/modal";
+import ListingShowContainer from "./listing_show/listing_show_container";
 
 const App = () => (
   <div>
@@ -11,6 +12,7 @@ const App = () => (
     <NavbarContainer />
     <h3>Explore Playbnb</h3>
     <Route exact path="/" component={ ListingIndexContainer } />
+    <Route path="/listings/:listingId" component={ ListingShowContainer } />
   </div>
 );
 

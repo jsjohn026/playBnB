@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import ListingIndex from "./listing_index";
-import { fetchListings } from "../actions/listing_actions";
+import { fetchListings, fetchListing } from "../actions/listing_actions";
 
 const mapStateToProps = state => {
   let listings = Object.values(state.entities.listings);
@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return ({
-    fetchListings: () => dispatch(fetchListings())
+    fetchListings: () => dispatch(fetchListings()), 
+    fetchListing: id => dispatch(fetchListing(id))
   })
 }
 

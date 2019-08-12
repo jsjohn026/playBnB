@@ -13,7 +13,7 @@ class ListingIndex extends React.Component {
         key={listing.id}
         listing={listing}
         />
-      )
+      );
     })
 
     return (

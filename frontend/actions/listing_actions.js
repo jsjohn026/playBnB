@@ -31,3 +31,9 @@ export const fetchListings = () => dispatch => (
     dispatch(receiveListings(listings))
   ))
 )
+
+export const fetchListing = id => dispatch => (
+  APIUtil.fetchListing(id).then(listing => (
+    dispatch(receiveListing(listing))
+  ))
+)

@@ -1,6 +1,5 @@
 import React from "react";
 import { withRouter } from "react-router-dom";
-import ListingIndexContainer from "./listing_index_container";
 
 class ListingIndexItem extends React.Component {
   constructor(props) {
@@ -10,8 +9,7 @@ class ListingIndexItem extends React.Component {
 
   handleClick() {
     const listingId = this.props.listing.id;
-    // this.props.history.push(`/listings/${listingId}`);
-    this.props.fetchListing(listingId);
+    this.props.history.push(`/listings/${listingId}`);
   }
 
   render() {
