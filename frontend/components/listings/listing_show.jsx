@@ -17,23 +17,13 @@ class ListingShow extends React.Component {
     const listing = this.props.listing;
     return (
       <div className="listing-show">
-      <div className="listing-map">
-        <Link to="/">Back to Listings Home</Link>
-        {/* <ListingMap */}
-          {/* listings={listings}
-          listingId={listingId}
-          listing={true}
-          fetchListing={fetchListing}
-          /> */}
+        <div className="listing-map">
+          <Link to="/">Back to Listings Home</Link>
+        </div>
+        <div className="listing-details">
+          <ListingDetail listing={listing} />
+        </div>
       </div>
-      <div className="listing-details">
-        <ListingDetail listing={listing} />
-        {/* <ProtectedRoute
-          path="/listings/:listingId/review"
-          
-          /> */}
-      </div>
-    </div>
     );
   }
 }

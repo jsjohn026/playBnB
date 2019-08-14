@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = ({ currentUser, logout, openModal }) => {
   
-  const sessionLinks = () => {
+  const nonUserLinks = () => {
     return(
     <header className="header">
       <nav className="header-nav">
@@ -22,7 +22,7 @@ const Navbar = ({ currentUser, logout, openModal }) => {
     );
   };
 
-  const sessionProtectedLinks = () => {
+  const userLinks = () => {
     return(
     <header className="header">
       <nav className="header-nav">
@@ -45,7 +45,7 @@ const Navbar = ({ currentUser, logout, openModal }) => {
     );
   };
   
-  return currentUser ? sessionProtectedLinks() : sessionLinks();
+  return currentUser ? userLinks() : nonUserLinks();
 }
 
 export default Navbar;

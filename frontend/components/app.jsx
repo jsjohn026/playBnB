@@ -2,9 +2,9 @@ import React from "react";
 import { Route } from "react-router-dom";
 // import { AuthRoute, ProtectedRoute } from "../util/route_utils";
 import NavbarContainer from "./navbar/navbar_container";
-import ListingIndexContainer from "./listing_index_container";
+import ListingIndexContainer from "./listings/listing_index_container";
 import Modal from "./modal/modal";
-import ListingShowContainer from "./listing_show/listing_show_container";
+import ListingShowContainer from "./listings/listing_show_container";
 
 const App = () => (
   <div>
