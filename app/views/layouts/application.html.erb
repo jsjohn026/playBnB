@@ -26,6 +26,11 @@
       "<%= image_url("books.jpg") %>"
     ]
     </script>
+     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
+    
+    <script type="text/javascript">
+    window.googleAPIKey = "<%= Rails.application.credentials.google[:api_key] %>"
+    </script>
   </head>
 
   <body>
