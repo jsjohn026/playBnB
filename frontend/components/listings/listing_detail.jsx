@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import ListingMap from "./listing_map";
 
 const ListingDetail = ({ listing, reviews }) => {
   return (
@@ -12,6 +13,7 @@ const ListingDetail = ({ listing, reviews }) => {
         <li>Capacity: {listing.max_guests}</li>
         <li>Latitude: {listing.lat}</li>
         <li>Longitude: {listing.lng}</li>
+        <ListingMap />
       </ul>
     </div>
   );
