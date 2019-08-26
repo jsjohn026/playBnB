@@ -10,7 +10,6 @@ class ListingMap extends React.Component {
       center: { lat: 37.7758, lng: -122.435 },
       zoom: 13
     };
-
   }
 
   componentDidMount() {
