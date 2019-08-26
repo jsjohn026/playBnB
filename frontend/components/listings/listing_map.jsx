@@ -1,5 +1,7 @@
 import React from "react";
 import MarkerManager from "../../util/marker_manager";
+import ReactDOM from "react-dom";
+import { withRouter } from "react-router-dom";
 
 class ListingMap extends React.Component {
   constructor(props) {

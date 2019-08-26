@@ -6,7 +6,6 @@ import { ProtectedRoute } from "../../util/route_utils";
 class ListingShow extends React.Component {
   constructor(props) {
     super(props);
-
   };
 
   componentDidMount() {
