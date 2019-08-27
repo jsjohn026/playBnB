@@ -30,11 +30,21 @@ export default class MarkerManager {
       fontSize: "12px"
     }
 
+    const markerIcon = {
+      path: "M22-48h-44v43h16l6 5 6-5h16z", 
+      fillColor: "white", 
+      fillOpacity: 1, 
+      scale: 0.6,
+      strokeColor: "gray", 
+      labelOrigin: new google.maps.Point(0, -25)
+    }
+
     const marker = new google.maps.Marker({
       position, 
       map: this.map, 
       listingId: listing.id,
-      label: markerLabel
+      label: markerLabel, 
+      icon: markerIcon
     });
     
     marker.addListener('click', () => this.handleClick(listing, marker));

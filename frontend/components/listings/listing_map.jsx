@@ -6,6 +6,8 @@ import { withRouter } from "react-router-dom";
 class ListingMap extends React.Component {
   constructor(props) {
     super(props);
+    const lat = this.props.lat;
+    const lng = this.props.lng;
     this.mapOptions = {
       center: { lat: 37.7758, lng: -122.435 },
       zoom: 13
@@ -15,11 +17,11 @@ class ListingMap extends React.Component {
   componentDidMount() {
     this.map = new google.maps.Map(this.mapNode, this.mapOptions);
     this.MarkerManager = new MarkerManager(this.map);
-    this.MarkerManager.updateMarkers(this.props.listings);
+    this.MarkerManager.updateMarkers(this.props.listing);
   }
 
   componentDidUpdate() {
-    this.MarkerManager.updateMarkers(this.props.listings);
+    this.MarkerManager.updateMarkers(this.props.listing);
   }
 
   render() {
