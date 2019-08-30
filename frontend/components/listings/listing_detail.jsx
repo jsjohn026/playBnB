@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import ListingMap from "./listing_map";
 
 const ListingDetail = ({ listing, reviews }) => {
+  debugger
   return (
     <div>
       <ul className="listing-attributes">
@@ -14,7 +15,7 @@ const ListingDetail = ({ listing, reviews }) => {
         <li>Latitude: {listing.lat}</li>
         <li>Longitude: {listing.lng}</li>
         { 
-          listing ? <ListingMap listing={[listing]}/> : <div></div>
+          listing.id ? <ListingMap listing={listing}/> : <div></div>
         }
       </ul>
     </div>

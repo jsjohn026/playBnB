@@ -1,9 +1,10 @@
 
 export default class MarkerManager {
-  constructor(map, handleClick) {
+  constructor(map, handleClick, options={}) {
     this.map = map;
     this.handleClick = handleClick;
     this.markers = {};
+    this.options = options;
   }
 
   updateMarkers(listings) {
@@ -30,7 +31,7 @@ export default class MarkerManager {
       fontSize: "12px"
     }
 
-    const markerIcon = {
+    const markerIcon = this.options.markerIcon || {
       path: "M22-48h-44v43h16l6 5 6-5h16z", 
       fillColor: "white", 
       fillOpacity: 1, 
