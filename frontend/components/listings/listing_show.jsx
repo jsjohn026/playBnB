@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ListingDetail from "./listing_detail";
 import { ProtectedRoute } from "../../util/route_utils";
 
@@ -17,7 +16,6 @@ class ListingShow extends React.Component {
     return (
       <div className="listing-show">
         <div className="listing-map">
-          <Link to="/">Back to Listings Home</Link>
         </div>
         <div className="listing-details">
           <ListingDetail listing={listing} />

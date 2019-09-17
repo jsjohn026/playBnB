@@ -10,7 +10,6 @@ const App = () => (
   <div>
     <Modal />
     <NavbarContainer />
-    <h3>Explore Playbnb</h3>
     <Route exact path="/" component={ ListingIndexContainer } />
     <Route path="/listings/:listingId" component={ ListingShowContainer } />
   </div>

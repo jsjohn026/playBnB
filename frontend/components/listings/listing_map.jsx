@@ -5,7 +5,6 @@ import { withRouter } from "react-router-dom";
 
 class ListingMap extends React.Component {
   constructor(props) {
-    debugger
     super(props);
     const lat = this.props.listing.lat;
     const lng = this.props.listing.lng;

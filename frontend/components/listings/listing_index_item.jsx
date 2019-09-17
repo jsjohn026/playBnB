@@ -13,16 +13,13 @@ class ListingIndexItem extends React.Component {
   }
 
   render() {
-    let index = Math.floor(Math.random() * 14);
-    let photo = window.photos[index];
-
-    const { name, description, price } = this.props.listing;
+    const { name, description, price, image_url } = this.props.listing;
     return (
       <div 
         className="listing-index-item"
         onClick={this.handleClick}
       > 
-        <div className="index-item-img" style={{backgroundImage: `url("${photo}")`}}/>
+        <div className="index-item-img" style={{backgroundImage: `url("${image_url}")`}}/>
         <div className="index-item-name">{name}</div>
         <div className="index-item-info">
           <span className="index-item-copy">
@@ -31,7 +28,7 @@ class ListingIndexItem extends React.Component {
         </div>
         <div className="index-item-info">
           <span className="index-item-copy">
-            <span className="index-item-price">${price} per night</span>
+            <span className="index-item-price">${price}/night</span>
           </span>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ currentUser, logout, openModal }) => {
   
@@ -6,7 +7,9 @@ const Navbar = ({ currentUser, logout, openModal }) => {
     return(
     <header className="header">
       <nav className="header-nav">
-        <div className="header-logo"/>
+        <div className="header-logo">
+          <Link to="/"></Link>
+        </div>
         <ul className="header-list">
           <li><a href="#">Become a host</a></li>
           <li><a href="#">Help</a></li>
@@ -26,7 +29,9 @@ const Navbar = ({ currentUser, logout, openModal }) => {
     return(
     <header className="header">
       <nav className="header-nav">
-        <div className="header-logo"/>
+        <div className="header-logo">
+          <Link to="/"></Link>
+        </div>
         <ul className="header-list">
           <li><a href="#">Become a host</a></li>
           <li><a href="#">Saved</a></li>
