@@ -13,7 +13,7 @@ const ListingDetail = ({ listing, reviews }) => {
           <img className="listing-image-small" src={listing.image_url}/>
           <img className="listing-image-small" src={listing.image_url}/>
         </div>
-        <div className="listing-image-column-b">
+        <div className="listing-image-column-c">
           <img className="listing-image-small" src={listing.image_url}/>
           <img className="listing-image-small" src={listing.image_url}/>
         </div>
