@@ -10,8 +10,18 @@ class BookingForm extends React.Component {
 
 
     return (
-      <div>
-        <form action="">
+      <div className="booking-form">
+        <form action="">Booking Reservation
+          <label htmlFor="">Start Date</label>
+          <input type="date" name="date" id=""/>
+          <label htmlFor="">End Date</label>
+          <input type="date" name="date" id=""/>
+          <select name="guests" id="">Number of Guests:
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
           <button type="submit">Reserve</button>
         </form>
       </div>

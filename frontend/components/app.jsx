@@ -4,7 +4,7 @@ import { Route } from "react-router-dom";
 import NavbarContainer from "./navbar/navbar_container";
 import ListingIndexContainer from "./listings/listing_index_container";
 import Modal from "./modal/modal";
-import ListingShowContainer from "./listings/listing_show_container";
+import ListingShowContainer from "./listings/show/listing_show_container";
 
 const App = () => (
   <div>

@@ -4,20 +4,7 @@ import ListingMap from "./listing_map";
 
 const ListingDetail = ({ listing, reviews }) => {
   return (
-    <div>
-      <div className="listing-image-row">
-        <div className="listing-image-column-a">
-          <img className="listing-image-main" src={listing.image_url}/>
-        </div>
-        <div className="listing-image-column-b">
-          <img className="listing-image-small" src={listing.image_url}/>
-          <img className="listing-image-small" src={listing.image_url}/>
-        </div>
-        <div className="listing-image-column-c">
-          <img className="listing-image-small" src={listing.image_url}/>
-          <img className="listing-image-small" src={listing.image_url}/>
-        </div>
-      </div>
+    <div className="listing-details">
       <h3>{listing.name}
         <p>{listing.city}</p>
       </h3>
