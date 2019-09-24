@@ -7,12 +7,17 @@ class BookingForm extends React.Component {
   }
 
   render() {
-
+    const listing = this.props.listing;
 
     return (
       <div className="booking-form">
+        <div className="booking-form-header">
+          <p><span className="listing-price">${listing.price}</span> per night</p>
+          <p className="booking-rating">{listing.average_rating || "No reviews yet"}</p>
+        </div>
+
         <form action="">Booking Reservation
-          <label htmlFor="">Start Date</label>
+          <label htmlFor=""> Start Date</label>
           <input type="date" name="date" id=""/>
           <label htmlFor="">End Date</label>
           <input type="date" name="date" id=""/>
@@ -22,7 +27,7 @@ class BookingForm extends React.Component {
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
-          <button type="submit">Reserve</button>
+          <button className="reserve-button" type="submit">Reserve</button>
         </form>
       </div>
     )

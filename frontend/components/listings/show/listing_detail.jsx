@@ -12,8 +12,6 @@ const ListingDetail = ({ listing, reviews }) => {
         <li>{listing.num_bedrooms} Bedrooms</li>
         <li>{listing.max_guests} Guests</li>
         <li>{listing.description}</li>
-        <li>Rating: {listing.average_rating || "No reviews yet"}</li>
-        <li>${listing.price} per night</li>
         { 
           listing.id ? <ListingMap listing={listing}/> : <div></div>
         }

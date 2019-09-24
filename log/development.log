@@ -40509,3 +40509,703 @@ Processing by Api::ListingsController#show as */*
 Completed 200 OK in 110ms (Views: 69.3ms | ActiveRecord: 0.7ms)
 
 
+Started GET "/" for ::1 at 2019-09-20 19:53:01 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 89ms (Views: 83.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-20 19:53:02 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (16.4ms)
+Completed 200 OK in 114ms (Views: 73.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 12:23:07 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (93.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (2.1ms)
+  Rendered static_pages/root.html.erb within layouts/application (116.2ms)
+Completed 200 OK in 861ms (Views: 763.1ms | ActiveRecord: 93.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 12:23:44 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (135.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (10.7ms)
+Completed 200 OK in 223ms (Views: 44.1ms | ActiveRecord: 135.0ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:27:29 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 636ms (Views: 632.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:27:30 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.2ms)
+  Rendered api/listings/show.json.jbuilder (18.3ms)
+Completed 200 OK in 114ms (Views: 74.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:37:14 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 744ms (Views: 740.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:37:15 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (2.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (14.5ms)
+Completed 200 OK in 115ms (Views: 70.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:39:17 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 963ms (Views: 960.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:39:18 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (13.5ms)
+Completed 200 OK in 132ms (Views: 87.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:42:55 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 664ms (Views: 660.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:42:56 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/show.json.jbuilder (15.6ms)
+Completed 200 OK in 94ms (Views: 61.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:49:34 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 627ms (Views: 624.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:49:35 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (9.5ms)
+Completed 200 OK in 89ms (Views: 51.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:56:12 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 669ms (Views: 666.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:56:13 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (25.0ms)
+Completed 200 OK in 127ms (Views: 80.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 14:58:10 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 626ms (Views: 623.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 14:58:11 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (16.2ms)
+Completed 200 OK in 122ms (Views: 78.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:07:44 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 715ms (Views: 712.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:07:45 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.5ms)
+Completed 200 OK in 122ms (Views: 75.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:08:56 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 74ms (Views: 70.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:08:57 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (19.9ms)
+Completed 200 OK in 193ms (Views: 116.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:09:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 79ms (Views: 76.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:09:21 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (11.4ms)
+Completed 200 OK in 97ms (Views: 58.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-09-24 15:10:20 -0500
+Processing by Api::ListingsController#index as */*
+  Parameters: {"formats"=>:json}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (217.6ms)
+Completed 200 OK in 261ms (Views: 259.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:10:24 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (11.6ms)
+Completed 200 OK in 100ms (Views: 59.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:11:38 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 733ms (Views: 729.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:11:39 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (17.9ms)
+Completed 200 OK in 123ms (Views: 79.9ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:12:01 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:12:02 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/show.json.jbuilder (14.3ms)
+Completed 200 OK in 108ms (Views: 63.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:12:54 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:12:54 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/show.json.jbuilder (15.9ms)
+Completed 200 OK in 115ms (Views: 73.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:13:09 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 92ms (Views: 88.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:13:09 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (11.3ms)
+Completed 200 OK in 102ms (Views: 64.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:14:10 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:14:11 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (11.5ms)
+Completed 200 OK in 136ms (Views: 76.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:14:24 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:14:24 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (13.9ms)
+Completed 200 OK in 150ms (Views: 79.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:14:52 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:14:53 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (13.5ms)
+Completed 200 OK in 92ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:15:07 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (1.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 140ms (Views: 134.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:15:07 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (10.7ms)
+Completed 200 OK in 115ms (Views: 67.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:15:11 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:15:11 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (13.4ms)
+Completed 200 OK in 95ms (Views: 59.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:16:19 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 97ms (Views: 94.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:16:20 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (23.4ms)
+Completed 200 OK in 126ms (Views: 91.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:17:20 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 76ms (Views: 73.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:17:21 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (4.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (9.4ms)
+Completed 200 OK in 156ms (Views: 101.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:17:46 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 75ms (Views: 72.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:17:47 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (41.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (11.0ms)
+Completed 200 OK in 144ms (Views: 59.7ms | ActiveRecord: 41.9ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:20:04 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 643ms (Views: 640.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:20:06 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (12.1ms)
+Completed 200 OK in 98ms (Views: 59.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:20:13 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 765ms (Views: 762.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:20:14 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.7ms)
+Completed 200 OK in 91ms (Views: 55.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:20:43 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:20:43 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (10.7ms)
+Completed 200 OK in 90ms (Views: 56.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:22:44 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 86ms (Views: 83.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:22:45 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.8ms)
+Completed 200 OK in 100ms (Views: 59.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:26:00 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 89ms (Views: 85.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:26:01 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (25.1ms)
+Completed 200 OK in 167ms (Views: 93.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:26:15 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:26:15 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (20.7ms)
+Completed 200 OK in 109ms (Views: 70.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-09-24 15:27:18 -0500
+Processing by StaticPagesController#root as HTML
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "BQ9Y0HMBXH2p0Mxv_UOFjg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 96ms (Views: 93.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-09-24 15:27:19 -0500
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (20.7ms)
+Completed 200 OK in 139ms (Views: 76.4ms | ActiveRecord: 0.8ms)
+
+
