@@ -10,12 +10,22 @@
   color: rgb(72, 72, 72);
 }
 
+.listing-attributes li {
+  padding-top: 20px;
+}
+
+.attribute-heading {
+  display: flex;
+  margin-right: 5px;
+}
+
 .listing-image-column-a {
   flex: 50%;
   max-width: 100%;
   max-height: 800px;
   height: 80vw;
   min-height: 40vh;
+  overflow: hidden;
 }
 
 .listing-image-row {
@@ -35,11 +45,11 @@
 .listing-image-column-b, .listing-image-column-c {
   flex: 25%;
   width: 25%;
+  overflow: hidden;
   // min-height: 100%;
 }
 
 .listing-image-main, .listing-image-small {
-  overflow: hidden;
   vertical-align: middle;
   width: 100%;
   border: 1px solid #484848;
@@ -52,13 +62,12 @@
   min-width: 100%;
   min-height: 100%;
   transition: all 0.2s;
-  // height: 660px;
+  height: 660px;
 }
 
 .listing-image-main:hover, .listing-image-small:hover {
   transition: all 0.3s;
   transform: scale(1.1);
-  overflow: hidden;
   cursor: pointer;
 }
 
@@ -68,34 +77,103 @@
   box-sizing: border-box;
 }
 
-h3 p {
-  color: #484848;
-  font-size: 14px;
+.listing-name {
+  font-size: 32px;
+}
+
+.listing-city {
+  color: #7a7a7a;
+  font-size: 16px;
   line-height: 1.43;
-  font-weight: normal;
+  font-weight: 400;
+  padding-top: 15px;
 }
 
 .booking-form {
   border: 1px solid lightgray; 
-  justify-content: center;
+  margin: 25px 50px;
+  padding: 30px;
+  box-sizing: border-box;
   width: 350px;
-  height: 350px;
-  margin: 25px 60px;
-  padding: 20px;
+  height: 400px;
 }
 
 .booking-form form {
   padding-top: 10px;
+  box-sizing: border-box;
 }
 
 .booking-form-header {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   border-bottom: 1px solid lightgray;
+  font-size: 12px;
 }
 
 .listing-price {
   font-size: 20px;
   font-weight: 600;
+}
+
+.booking-rating {
+  font-weight: 500;
+  display: flex;
+}
+
+.fa-star {
+  color: #008489;
+  display: flex;
+  margin-right: 5px;
+}
+
+.booking-form input {
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px 10px; 
+  align-content: center;
+}
+
+.booking-form-dates input[type=date] {
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.booking-form-dates {
+  margin-top: 10px; 
+}
+
+.date-row {
+  display: flex;
+  width: 100%;
+}
+
+.guest-dropdown {
+  font-family: inherit;
+  margin-top: 20px;
+}
+
+.guest-dropdown-options {
+  display: block;
+  font-size: 14px;
+}
+
+.reserve-button {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  padding: 15px 10px; 
+  background: rgb(255, 90, 95);
+  color: white;
+  border: 0 none;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+}
+
+.reserve-button-note {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
 }
 
 @media ( max-width: 800px ) {
