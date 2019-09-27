@@ -11,13 +11,19 @@ const ListingDetail = ({ listing, reviews }) => {
 
       
       <ul className="listing-attributes">
-        <div className="listing-accomodations">
+        <div className="listing-accommodations">
           <p>{listing.max_guests} Guests</p>
           <p>{listing.num_bedrooms} Bedrooms</p>
           <p>{listing.num_bathrooms} Bathrooms</p>
         </div>
-        <li><div className="attribute-heading"><i class="fas fa-home"></i> Entire home</div>
-        You'll have the entire house to yourself</li>
+
+        <li>
+          <div className="attribute-heading">
+            <i class="fas fa-home"></i>
+            <p>Entire home</p>
+            <p>You'll have the entire house to yourself</p>
+          </div>
+        </li>
         <li>{listing.description}</li>
         { 
           listing.id ? <ListingMap listing={listing}/> : <div></div>
