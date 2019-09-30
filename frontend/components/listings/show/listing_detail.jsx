@@ -13,7 +13,7 @@ const ListingDetail = ({ listing, reviews }) => {
         <div className="listing-accommodations">
           <p>{listing.max_guests} Guests</p>
           <p>{listing.num_bedrooms} Bedrooms</p>
-          <p>{listing.num_bathrooms} Bathrooms</p>
+          <p>{listing.num_bathrooms || "2"} Bathrooms</p>
         </div>
 
         <div className="attribute-section">
@@ -73,14 +73,14 @@ const ListingDetail = ({ listing, reviews }) => {
         <div className="amenities-section">Amenities
           <ul className="amenities-list">
             <div className="amenities-column">
-              <li><i class="fas fa-wifi"></i>Wifi</li>
-              <li><i class="fas fa-laptop"></i>Laptop friendly workspace</li>
-              <li><i class="fas fa-utensils"></i>Kitchen</li>
+              <li><i className="fas fa-wifi"></i>Wifi</li>
+              <li><i className="fas fa-laptop"></i>Laptop friendly workspace</li>
+              <li><i className="fas fa-utensils"></i>Kitchen</li>
             </div>
             <div className="amenities-column">
-              <li><i class="fas fa-thermometer-half"></i>Heating</li>
-              <li><i class="fas fa-coffee"></i>Coffee</li>
-              <li><i class="fas fa-tv"></i>Cable TV</li>
+              <li><i className="fas fa-thermometer-half"></i>Heating</li>
+              <li><i className="fas fa-coffee"></i>Coffee</li>
+              <li><i className="fas fa-tv"></i>Cable TV</li>
             </div>
           </ul>
         </div>

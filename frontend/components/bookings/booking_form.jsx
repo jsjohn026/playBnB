@@ -21,10 +21,10 @@ class BookingForm extends React.Component {
 
         <form action="">
           <p className="booking-form-dates">Dates
-            <div className="date-row">
+            <span className="date-row">
               <input type="date" name="date" id="" />
               <input type="date" name="date" id="" />
-            </div>
+            </span>
           </p>
 
           <p className="guest-dropdown">Guests</p>

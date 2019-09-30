@@ -16,6 +16,7 @@
 #  updated_at     :datetime         not null
 #  lat            :float            not null
 #  lng            :float            not null
+#  image_url      :string
 #
 
 require 'test_helper'

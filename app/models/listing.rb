@@ -16,6 +16,7 @@
 #  updated_at     :datetime         not null
 #  lat            :float            not null
 #  lng            :float            not null
+#  image_url      :string
 #
 
 class Listing < ApplicationRecord
@@ -26,5 +27,9 @@ class Listing < ApplicationRecord
     foreign_key: :host_id,
     class_name: :User
 
+  has_many :bookings, 
+    primary_key: :id,
+    foreign_key: :listing_id,
+    class_name: :Booking
 
 end
