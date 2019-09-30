@@ -64,51 +64,81 @@
 .listing-attributes {
   text-align: left;
   padding-left: 50px;
+  border-bottom: 1px solid lightgray; 
+  box-sizing: border-box;
   // width: 100%;
-}
-
-.listing-attributes li {
-  padding-top: 20px;
 }
 
 .listing-name {
   font-size: 32px;
+  box-sizing: border-box;
 }
 
-.listing-city, .listing-accommodations, .attribute-heading {
+.listing-city, .listing-accommodations, .attribute-heading, .listing-attributes li, .listing-description {
   color: #515151;
   font-size: 16px;
   line-height: 1.43;
   font-weight: 300;
-  padding: 15px 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   box-sizing: border-box;
 }
 
+.listing-city {
+  padding-bottom: 0;
+}
+
 .listing-accommodations {
+  padding-top: 5px;
+  padding-bottom: 20px;
   border-bottom: 1px solid lightgray; 
   box-sizing: border-box;
 }
 
 .listing-accommodations p {
   display: flex;
-  margin-right: 25px;
+  margin-right: 30px;
+}
+
+.attribute-section {
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 .attribute-heading {
   display: flex;
-  font-weight: 500;
+  font-weight: 400;
   padding: 5px 0px;
 }
 
-.attribute-heading p {
+.attribute-heading div {
+  display: grid;
+}
+
+.attribute-descriptor {
+  font-weight: 300;
+}
+
+.fa-home, .fa-map-marker-alt, .fa-unlock-alt, .fa-key {
+  font-size: 26px;
+  display: flex;
+  margin-right: 15px;
+  width: 35px;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.listing-description {
+  border-top: 1px solid lightgray;
+  box-sizing: border-box;
+  padding-top: 40px;
   display: block;
 }
 
-.fa-home {
-  font-size: 20px;
-  display: flex;
-  margin-right: 15px;
+.description-filler div {
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .booking-form {

@@ -9,7 +9,6 @@ const ListingDetail = ({ listing, reviews }) => {
         <p className="listing-city">{listing.city}</p>
       </h3>
 
-      
       <ul className="listing-attributes">
         <div className="listing-accommodations">
           <p>{listing.max_guests} Guests</p>
@@ -17,17 +16,70 @@ const ListingDetail = ({ listing, reviews }) => {
           <p>{listing.num_bathrooms} Bathrooms</p>
         </div>
 
-        <li>
-          <div className="attribute-heading">
-            <i class="fas fa-home"></i>
-            <p>Entire home</p>
-            <p>You'll have the entire house to yourself</p>
-          </div>
-        </li>
-        <li>{listing.description}</li>
-        { 
-          listing.id ? <ListingMap listing={listing}/> : <div></div>
-        }
+        <div className="attribute-section">
+          <li>
+            <div className="attribute-heading">
+              <i className="fas fa-home"></i>
+              <div>
+                <p>Entire home</p>
+                <p className="attribute-descriptor">You'll have the entire house to yourself</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="attribute-heading">
+              <i className="fas fa-map-marker-alt"></i>
+              <div>
+                <p>Great location</p>
+                <p className="attribute-descriptor">90% of recent guests gave the location a 5-star rating.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="attribute-heading">
+              <i className="fas fa-unlock-alt"></i>
+              <div>
+                <p>Self check-in</p>
+                <p className="attribute-descriptor">Check yourself in with the keypad.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div className="attribute-heading">
+              <i className="fas fa-key"></i>
+              <div>
+                <p>Great check-in experience</p>
+                <p className="attribute-descriptor">100% of recent guests gave the check-in process a 5-star rating.</p>
+              </div>
+            </div>
+          </li>
+        </div>
+        <div className="listing-description">
+          {listing.description}
+          <section className="description-filler">
+            <div>Enjoy a relaxing stay in the Bay.
+            This peaceful space provides a place to relax, cook, and enjoy a glass of wine on the patio.</div>
+            
+            <div>Minutes away from some of the best food and amenities in the Bay Area.
+            This cozy spot won't disappoint.</div>
+
+            <div>
+              <p>The space</p>
+            This darling cottage like casita is located on the heart of the peninsula offering easy access to some of the Bay Areas most desirable tourist attractions and professional companies.
+            Some of the best restaurants, hiking, and biking are minutes from our home.</div>
+            
+            <div>You can also take an easy commute less than 30 minutes to San Francisco or San Jose via CalTrain or car. This is the perfect location for someone who doesn't want to stay in the foggy city, and appreciates all the Bay Area has to offer!</div>
+          </section>
+        </div>
+        <div className="listing-map">
+          {
+            listing.id ? <ListingMap listing={listing} /> : <div></div>
+          }
+        </div>
+        <div>
+          Amenities
+
+        </div>
       </ul>
     </div>
   );
