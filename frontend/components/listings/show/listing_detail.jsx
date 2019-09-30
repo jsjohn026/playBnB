@@ -70,13 +70,18 @@ const ListingDetail = ({ listing, reviews }) => {
             <div><p className="description-subheading">Other things to note</p>You can also take an easy commute less than 30 minutes to San Francisco or San Jose via CalTrain or car. This is the perfect location for someone who doesn't want to stay in the foggy city, and appreciates all the Bay Area has to offer!</div>
           </section>
         </div>
-        <div className="amenities-section">
-          <ul className="amenities-heading">Amenities
-            <li><i class="fas fa-wifi"></i>Wifi</li>
-            <li><i class="fas fa-utensils"></i>Kitchen</li>
-            <li><i class="fas fa-laptop"></i>Laptop friendly workspace</li>
-            <li><i class="fas fa-thermometer-half"></i>Heating</li>
-            <li><i class="fas fa-tv"></i>Cable TV</li>
+        <div className="amenities-section">Amenities
+          <ul className="amenities-list">
+            <div className="amenities-column">
+              <li><i class="fas fa-wifi"></i>Wifi</li>
+              <li><i class="fas fa-laptop"></i>Laptop friendly workspace</li>
+              <li><i class="fas fa-utensils"></i>Kitchen</li>
+            </div>
+            <div className="amenities-column">
+              <li><i class="fas fa-thermometer-half"></i>Heating</li>
+              <li><i class="fas fa-coffee"></i>Coffee</li>
+              <li><i class="fas fa-tv"></i>Cable TV</li>
+            </div>
           </ul>
         </div>
         <div className="listing-map">
