@@ -63,22 +63,26 @@ const ListingDetail = ({ listing, reviews }) => {
             <div>Minutes away from some of the best food and amenities in the Bay Area.
             This cozy spot won't disappoint.</div>
 
-            <div>
-              <p>The space</p>
-            This darling cottage like casita is located on the heart of the peninsula offering easy access to some of the Bay Areas most desirable tourist attractions and professional companies.
-            Some of the best restaurants, hiking, and biking are minutes from our home.</div>
+            <div><p className="description-subheading">The space</p>This darling cottage-like casita is located on the heart of the peninsula offering easy access to some of the Bay Areas most desirable tourist attractions and professional companies.</div>
+
+            <div>Some of the best restaurants, hiking, and biking are minutes from our home.</div>
             
-            <div>You can also take an easy commute less than 30 minutes to San Francisco or San Jose via CalTrain or car. This is the perfect location for someone who doesn't want to stay in the foggy city, and appreciates all the Bay Area has to offer!</div>
+            <div><p className="description-subheading">Other things to note</p>You can also take an easy commute less than 30 minutes to San Francisco or San Jose via CalTrain or car. This is the perfect location for someone who doesn't want to stay in the foggy city, and appreciates all the Bay Area has to offer!</div>
           </section>
+        </div>
+        <div className="amenities-section">
+          <ul className="amenities-heading">Amenities
+            <li><i class="fas fa-wifi"></i>Wifi</li>
+            <li><i class="fas fa-utensils"></i>Kitchen</li>
+            <li><i class="fas fa-laptop"></i>Laptop friendly workspace</li>
+            <li><i class="fas fa-thermometer-half"></i>Heating</li>
+            <li><i class="fas fa-tv"></i>Cable TV</li>
+          </ul>
         </div>
         <div className="listing-map">
           {
             listing.id ? <ListingMap listing={listing} /> : <div></div>
           }
-        </div>
-        <div>
-          Amenities
-
         </div>
       </ul>
     </div>
