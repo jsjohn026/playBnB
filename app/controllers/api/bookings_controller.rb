@@ -1,4 +1,3 @@
-# require 'byebug'
 class Api::BookingsController < ApplicationController
   before_action :ensure_logged_in
 
@@ -9,12 +8,10 @@ class Api::BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @booking.guest_id = current_user.id
-    # debugger
-
     if @booking.save
       render :show
     else
-      render json: @bookings.errors.full_messages, status: 422
+      render json: @booking.errors.full_messages, status: 422
     end
   end
   

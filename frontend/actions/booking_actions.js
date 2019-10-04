@@ -13,4 +13,4 @@ export const createBooking = booking => dispatch => (
   APIUtil.createBooking(booking).then(booking => (
     dispatch(receiveBooking(booking))
   ))
-)
+);
