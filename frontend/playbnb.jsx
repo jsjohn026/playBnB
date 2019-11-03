@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.booking = {
     booking: {
     listing_id: 1, 
-    checkin_date: "2020-02-02", 
-    checkout_date: "2020-02-08", 
+    checkin_date: '2020-02-02', 
+    checkout_date: '2020-02-08', 
     num_guests: 2
     }
   };
