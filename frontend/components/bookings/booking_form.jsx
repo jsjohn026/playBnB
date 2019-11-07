@@ -3,7 +3,23 @@ import React from "react";
 class BookingForm extends React.Component {
   constructor(props) {
     super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    const newBooking = {
+      
+    }
+
+    // const user = Object.assign({}, this.state);
+    // this.props.processForm(user).then(this.props.closeModal);
+  }
+
+  update(field) {
+    return e => this.setState({
+      [field]: e.currentTarget.value
+    });
   }
 
   render() {
@@ -19,7 +35,10 @@ class BookingForm extends React.Component {
           </p>
         </div>
 
-        <form action="">
+        <form 
+          action=""
+          onSubmit = {this.handleSubmit}
+        >
           <p className="booking-form-dates">Dates
             <span className="date-row">
               <input type="date" name="date" id="" />
@@ -37,7 +56,7 @@ class BookingForm extends React.Component {
           <button className="reserve-button" type="submit">Reserve</button>
           <div className="reserve-button-note">
             <p>You won’t be charged yet</p>
-            A small number of reservations may include an Playbnb-required security deposit.</div>
+            A small number of reservations may include a Playbnb-required security deposit.</div>
         </form>
       </div>
     )

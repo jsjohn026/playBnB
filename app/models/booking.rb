@@ -7,7 +7,7 @@
 #  guest_id      :integer          not null
 #  checkin_date  :date             not null
 #  checkout_date :date             not null
-#  num_guests    :date             not null
+#  num_guests    :integer          not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #

@@ -2,8 +2,13 @@ import { connect } from "react-redux";
 import BookingForm from "./booking_form";
 
 const mapStateToProps = (state, ownProps) => {
+  debugger
   return {
-    errors: state.errors
+    booking: { 
+      listing_id: ownProps.listing.id,  
+      checkin_date: null,  
+      checkout_date: null,  
+      num_guests: 1 }
   } 
 }
 
