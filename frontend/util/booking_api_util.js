@@ -1,24 +1,22 @@
-// export const fetchBookings = () => {
-//   return $.ajax({
-//     method: "GET",
-//     url: `/api/bookings`,
-//     error: (err) => console.log(err)
-//   })
-// }
+export const fetchBookings = () => {
+  return $.ajax({
+    method: "GET",
+    url: `/api/bookings`
+  })
+}
 
-// export const fetchBooking = id => {
-//   return $.ajax({
-//     method: "GET",
-//     url: `/api/bookings/${id}`,
-//     error: (err) => console.log(err)
-//   })
-// }
+export const fetchBooking = id => {
+  return $.ajax({
+    method: "GET",
+    url: `/api/bookings/${id}`
+  })
+}
 
 export const createBooking = booking => {
+  debugger
   return $.ajax({
     method: "POST",
     url: `/api/bookings`,
-    data: booking,
-    error: (err) => console.log(err)
+    data: { booking }
   })
 }
