@@ -56546,3 +56546,2348 @@ Processing by Api::ListingsController#show as */*
 Completed 200 OK in 188ms (Views: 112.8ms | ActiveRecord: 2.3ms)
 
 
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-10 20:04:52 -0600
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jasmine/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (131.9ms)
+Completed 200 OK in 2553ms (Views: 2490.2ms | ActiveRecord: 59.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-10 20:04:56 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (43.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (9.6ms)
+Completed 200 OK in 187ms (Views: 53.3ms | ActiveRecord: 50.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-10 20:06:26 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-27", "checkout_date"=>"2019-11-28", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[36mBooking Exists (44.7ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-28' OR 
+        checkout_date < '2019-11-27') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (29.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+Completed 422 Unprocessable Entity in 119ms (Views: 0.3ms | ActiveRecord: 81.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-10 20:07:03 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-27", "checkout_date"=>"2019-11-28", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[36mBooking Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-28' OR 
+        checkout_date < '2019-11-27') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+Completed 422 Unprocessable Entity in 8ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-10 20:07:04 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 602ms (Views: 600.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-10 20:07:06 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (8.7ms)
+Completed 200 OK in 108ms (Views: 48.5ms | ActiveRecord: 4.8ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-10 20:07:20 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-25", "checkout_date"=>"2019-11-26", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[36mBooking Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-26' OR 
+        checkout_date < '2019-11-25') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-10 20:09:59 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 818ms (Views: 813.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-10 20:10:00 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.1ms)
+Completed 200 OK in 88ms (Views: 50.5ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-10 20:10:20 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-13", "checkout_date"=>"2019-11-14", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[36mBooking Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-14' OR 
+        checkout_date < '2019-11-13') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:23:49 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:23:50 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (2.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (18.5ms)
+Completed 200 OK in 123ms (Views: 78.4ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 06:24:34 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-02", "checkout_date"=>"2019-12-03", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[36mBooking Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-03' OR 
+        checkout_date < '2019-12-02') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:11
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:11
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:25:52 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 50ms (Views: 36.8ms | ActiveRecord: 10.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:25:52 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (10.7ms)
+Completed 200 OK in 150ms (Views: 64.7ms | ActiveRecord: 14.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 06:26:10 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-20", "checkout_date"=>"2019-11-21", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-21' OR 
+        checkout_date < '2019-11-20') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 143873ms (Views: 1.8ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:35:52 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 643ms (Views: 630.9ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:36:02 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/show.json.jbuilder (9.0ms)
+Completed 200 OK in 145ms (Views: 41.2ms | ActiveRecord: 30.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 06:37:50 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-19", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-19' OR 
+        checkout_date < '2019-11-18') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 23268ms (Views: 0.4ms | ActiveRecord: 7.3ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 06:38:41 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-19", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.6ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-19' OR 
+        checkout_date < '2019-11-18') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 439062ms (Views: 0.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:46:00 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 641ms (Views: 637.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:46:06 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (8.2ms)
+Completed 200 OK in 124ms (Views: 46.2ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:49:47 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 53ms (Views: 46.3ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:49:50 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (10.0ms)
+Completed 200 OK in 108ms (Views: 56.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-11-11 06:49:52 -0600
+Processing by Api::ListingsController#index as */*
+  Parameters: {"formats"=>:json}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.6ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (225.1ms)
+Completed 200 OK in 275ms (Views: 273.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:49:55 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-11-11 06:49:56 -0600
+Processing by Api::ListingsController#index as */*
+  Parameters: {"formats"=>:json}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (254.9ms)
+Completed 200 OK in 295ms (Views: 293.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:50:01 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/show.json.jbuilder (13.3ms)
+Completed 200 OK in 112ms (Views: 53.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 06:51:58 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"1", "checkin_date"=>"2019-11-14", "checkout_date"=>"2019-11-17", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-17' OR 
+        checkout_date < '2019-11-14') LIMIT $2[0m  [["listing_id", 1], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 43ms (Views: 0.2ms | ActiveRecord: 13.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 06:52:44 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 06:52:49 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (6.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (10.4ms)
+Completed 200 OK in 127ms (Views: 56.7ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:01:27 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 620ms (Views: 617.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:02:47 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (9.6ms)
+Completed 200 OK in 127ms (Views: 65.2ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:06:02 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 605ms (Views: 602.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:07:27 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 747ms (Views: 743.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:12:26 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 591ms (Views: 587.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:13:07 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 608ms (Views: 605.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:13:28 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (5.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.3ms)
+Completed 200 OK in 119ms (Views: 59.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:15:20 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 677ms (Views: 674.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:15:45 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (3.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (9.8ms)
+Completed 200 OK in 119ms (Views: 58.5ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:25:04 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 44ms (Views: 31.4ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:25:09 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (7.9ms)
+Completed 200 OK in 153ms (Views: 43.2ms | ActiveRecord: 36.4ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:25:58 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-26", "checkout_date"=>"2019-11-29", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-29' OR 
+        checkout_date < '2019-11-26') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 24ms (Views: 0.2ms | ActiveRecord: 7.2ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:37:47 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 621ms (Views: 609.3ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:37:51 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (9.3ms)
+Completed 200 OK in 125ms (Views: 43.8ms | ActiveRecord: 17.2ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:38:18 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-09", "checkout_date"=>"2019-12-11", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-11' OR 
+        checkout_date < '2019-12-09') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 8.2ms)
+
+
+
+NoMethodError - undefined method `errors' for nil:NilClass:
+  app/controllers/api/bookings_controller.rb:16:in `create'
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:38:30 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-09", "checkout_date"=>"2019-12-11", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-11' OR 
+        checkout_date < '2019-12-09') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 1.5ms)
+
+
+
+NoMethodError - undefined method `errors' for nil:NilClass:
+  app/controllers/api/bookings_controller.rb:16:in `create'
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:38:59 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 48ms (Views: 36.4ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:39:02 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (8.4ms)
+Completed 200 OK in 148ms (Views: 46.8ms | ActiveRecord: 28.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:39:24 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-21", "checkout_date"=>"2019-11-26", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-26' OR 
+        checkout_date < '2019-11-21') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 30ms (Views: 0.2ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:42:21 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 612ms (Views: 610.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:42:23 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (14.5ms)
+Completed 200 OK in 115ms (Views: 76.4ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:42:50 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-12", "checkout_date"=>"2019-11-13", "num_guests"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-13' OR 
+        checkout_date < '2019-11-12') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 07:49:45 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 643ms (Views: 640.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/1" for ::1 at 2019-11-11 07:49:46 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"1"}
+  [1m[36mListing Load (3.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (15.9ms)
+Completed 200 OK in 104ms (Views: 61.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 07:50:09 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-19", "checkout_date"=>"2019-11-23", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-23' OR 
+        checkout_date < '2019-11-19') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-11-11 08:04:38 -0600
+Processing by Api::ListingsController#index as */*
+  Parameters: {"formats"=>:json}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/index.json.jbuilder (198.4ms)
+Completed 200 OK in 232ms (Views: 230.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings/2" for ::1 at 2019-11-11 08:04:39 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"2"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (14.4ms)
+Completed 200 OK in 84ms (Views: 53.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 08:04:44 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/2" for ::1 at 2019-11-11 08:04:45 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"2"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (12.6ms)
+Completed 200 OK in 83ms (Views: 52.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings" for ::1 at 2019-11-11 08:54:12 -0600
+Processing by Api::ListingsController#index as */*
+  Parameters: {"formats"=>:json}
+  Rendering api/listings/index.json.jbuilder
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT "listings".* FROM "listings"[0m
+  ↳ app/views/api/listings/index.json.jbuilder:1
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.3ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/_listing.json.jbuilder (0.1ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/_listing.json.jbuilder (0.2ms)
+  Rendered api/listings/index.json.jbuilder (235.6ms)
+Completed 200 OK in 268ms (Views: 267.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 08:54:15 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (12.7ms)
+Completed 200 OK in 94ms (Views: 62.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 08:54:33 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 08:54:33 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (10.9ms)
+Completed 200 OK in 91ms (Views: 54.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 08:55:40 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 619ms (Views: 615.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 08:57:30 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (11.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (11.5ms)
+Completed 200 OK in 133ms (Views: 66.4ms | ActiveRecord: 11.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:08:01 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-29", "checkout_date"=>"2019-12-11", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-11' OR 
+        checkout_date < '2019-11-29') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:08:43 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 676ms (Views: 673.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:08:44 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (8.5ms)
+Completed 200 OK in 91ms (Views: 49.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:10:44 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-13", "checkout_date"=>"2019-11-20", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-20' OR 
+        checkout_date < '2019-11-13') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 13ms (Views: 0.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:10:47 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 596ms (Views: 593.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:10:48 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (9.9ms)
+Completed 200 OK in 92ms (Views: 53.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:11:17 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-14", "checkout_date"=>"2019-11-18", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-18' OR 
+        checkout_date < '2019-11-14') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 10ms (Views: 0.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:11:20 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 36ms (Views: 33.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:11:21 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (10.4ms)
+Completed 200 OK in 86ms (Views: 48.1ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:14:22 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 643ms (Views: 640.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:14:23 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (3.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (14.4ms)
+Completed 200 OK in 106ms (Views: 69.1ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:15:13 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-20", "checkout_date"=>"2019-11-29", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-29' OR 
+        checkout_date < '2019-11-20') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 10ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:18:51 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 645ms (Views: 643.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:18:52 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (13.2ms)
+Completed 200 OK in 113ms (Views: 62.8ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:19:22 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-13", "checkout_date"=>"2019-11-25", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-25' OR 
+        checkout_date < '2019-11-13') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 11ms (Views: 0.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:19:32 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:19:33 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (9.2ms)
+Completed 200 OK in 84ms (Views: 49.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:20:18 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-13", "checkout_date"=>"2019-11-20", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.7ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-20' OR 
+        checkout_date < '2019-11-13') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:20:39 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 635ms (Views: 632.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:20:40 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (22.5ms)
+Completed 200 OK in 125ms (Views: 81.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:25:29 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-12", "checkout_date"=>"2019-11-22", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-22' OR 
+        checkout_date < '2019-11-12') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:41:17 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-12", "checkout_date"=>"2019-11-22", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-22' OR 
+        checkout_date < '2019-11-12') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 10ms (Views: 0.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:41:23 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 669ms (Views: 666.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:41:48 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 683ms (Views: 680.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:41:51 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (10.1ms)
+Completed 200 OK in 105ms (Views: 50.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:49:08 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 600ms (Views: 597.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:49:38 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 665ms (Views: 662.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:50:17 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:50:20 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (6.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (11.8ms)
+Completed 200 OK in 115ms (Views: 56.6ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:54:24 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 612ms (Views: 609.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 09:55:01 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (19.4ms)
+Completed 200 OK in 127ms (Views: 70.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 09:59:49 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-20", "checkout_date"=>"2019-11-30", "num_guests"=>"1"}, "formats"=>:json}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-30' OR 
+        checkout_date < '2019-11-20') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 12ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 09:59:52 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 614ms (Views: 611.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 10:00:56 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.3ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 10:01:37 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.9ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 675ms (Views: 671.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 10:02:24 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (4.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (9.9ms)
+Completed 200 OK in 144ms (Views: 68.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 10:02:40 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 611ms (Views: 608.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 10:03:04 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 10:03:27 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (4.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (9.0ms)
+Completed 200 OK in 132ms (Views: 67.2ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 10:40:55 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 654ms (Views: 650.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 10:41:28 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (11.4ms)
+Completed 200 OK in 117ms (Views: 63.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 10:43:15 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-21", "num_guests"=>"2"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-11-21' OR 
+        checkout_date < '2019-11-18') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:18:43 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 618ms (Views: 614.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:19:00 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (6.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (13.1ms)
+Completed 200 OK in 144ms (Views: 66.3ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:23:34 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-26", "checkout_date"=>"2019-12-30", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-30' OR 
+        checkout_date < '2019-11-26') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Create (48.5ms)[0m  [1m[32mINSERT INTO "bookings" ("listing_id", "guest_id", "checkin_date", "checkout_date", "created_at", "updated_at", "num_guests") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["listing_id", 4], ["guest_id", 1], ["checkin_date", "2019-11-26"], ["checkout_date", "2019-12-30"], ["created_at", "2019-11-11 17:23:34.214730"], ["updated_at", "2019-11-11 17:23:34.214730"], ["num_guests", 3]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  Rendering api/bookings/show.json.jbuilder
+  Rendered api/bookings/show.json.jbuilder (123.5ms)
+Completed 500 Internal Server Error in 105244ms (ActiveRecord: 53.4ms)
+
+
+
+ActionView::MissingTemplate - Missing partial api.bookings/_booking with {:locale=>[:en], :formats=>[:json, :html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/jasmine/Desktop/Coding/fullstack_online/swe_online/projects/fullstack/playBnB/app/views"
+:
+  app/views/api/bookings/show.json.jbuilder:2:in `block in _app_views_api_bookings_show_json_jbuilder___4168773705802470648_70344612374360'
+  app/views/api/bookings/show.json.jbuilder:1:in `_app_views_api_bookings_show_json_jbuilder___4168773705802470648_70344612374360'
+  app/controllers/api/bookings_controller.rb:14:in `create'
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:26:08 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (24.4ms)
+Completed 200 OK in 52ms (Views: 40.9ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:26:14 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (9.4ms)
+Completed 200 OK in 147ms (Views: 44.3ms | ActiveRecord: 34.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:27:05 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-13", "checkout_date"=>"2019-11-19", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (3.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-19' OR 
+        checkout_date < '2019-11-13') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Create (0.4ms)[0m  [1m[32mINSERT INTO "bookings" ("listing_id", "guest_id", "checkin_date", "checkout_date", "created_at", "updated_at", "num_guests") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["listing_id", 4], ["guest_id", 1], ["checkin_date", "2019-11-13"], ["checkout_date", "2019-11-19"], ["created_at", "2019-11-11 17:27:05.819541"], ["updated_at", "2019-11-11 17:27:05.819541"], ["num_guests", 3]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  Rendering api/bookings/show.json.jbuilder
+  Rendered api/bookings/show.json.jbuilder (31.7ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 11.9ms)
+
+
+
+ActionView::MissingTemplate - Missing partial api.bookings/_booking with {:locale=>[:en], :formats=>[:json, :html, :text, :js, :css, :ics, :csv, :vcf, :vtt, :png, :jpeg, :gif, :bmp, :tiff, :svg, :mpeg, :mp3, :ogg, :m4a, :webm, :mp4, :otf, :ttf, :woff, :woff2, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :pdf, :zip, :gzip], :variants=>[], :handlers=>[:jbuilder]}. Searched in:
+  * "/Users/jasmine/Desktop/Coding/fullstack_online/swe_online/projects/fullstack/playBnB/app/views"
+:
+  app/views/api/bookings/show.json.jbuilder:2:in `block in _app_views_api_bookings_show_json_jbuilder___4168773705802470648_70344554546380'
+  app/views/api/bookings/show.json.jbuilder:1:in `_app_views_api_bookings_show_json_jbuilder___4168773705802470648_70344554546380'
+  app/controllers/api/bookings_controller.rb:14:in `create'
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:30:45 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:30:51 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.4ms)
+  Rendered api/listings/show.json.jbuilder (8.0ms)
+Completed 200 OK in 129ms (Views: 57.0ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:31:42 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-26", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (11.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 33ms (Views: 0.2ms | ActiveRecord: 13.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:33:57 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 67ms (Views: 54.6ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:34:59 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (9.3ms)
+Completed 200 OK in 119ms (Views: 43.5ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:35:04 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 618ms (Views: 615.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:35:05 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (11.5ms)
+Completed 200 OK in 84ms (Views: 46.1ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:35:34 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-19", "checkout_date"=>"2019-11-25", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-25' OR 
+        checkout_date < '2019-11-19') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 30ms (Views: 0.2ms | ActiveRecord: 11.1ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:35:49 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 46ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:35:49 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (13.2ms)
+Completed 200 OK in 130ms (Views: 62.1ms | ActiveRecord: 8.4ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:36:02 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-22", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-22' OR 
+        checkout_date < '2019-11-18') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 46356ms (Views: 0.3ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:36:56 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-22", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-22' OR 
+        checkout_date < '2019-11-18') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 45835ms (Views: 1.5ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:38:28 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-18", "checkout_date"=>"2019-11-22", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-22' OR 
+        checkout_date < '2019-11-18') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:42
+  [1m[36mListing Load (0.3ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 9ms (Views: 0.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:50:48 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 54ms (Views: 42.4ms | ActiveRecord: 9.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:50:48 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (14.8ms)
+Completed 200 OK in 162ms (Views: 92.6ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:51:03 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-27", "checkout_date"=>"2019-11-29", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.4ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 500 Internal Server Error in 49887ms (ActiveRecord: 7.9ms)
+
+
+
+NoMethodError - undefined method `where' for nil:NilClass:
+  app/models/booking.rb:38:in `booking_conflicts'
+  app/controllers/api/bookings_controller.rb:12:in `create'
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:52:27 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 49ms (Views: 37.7ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:52:27 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.9ms)
+  Rendered api/listings/show.json.jbuilder (13.1ms)
+Completed 200 OK in 116ms (Views: 54.4ms | ActiveRecord: 8.1ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:52:36 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-11-19", "checkout_date"=>"2019-11-27", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-11-27' OR 
+        checkout_date < '2019-11-19') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:44
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 108100ms (Views: 1.2ms | ActiveRecord: 8.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 11:58:36 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 41ms (Views: 33.8ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 11:58:36 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (16.0ms)
+Completed 200 OK in 152ms (Views: 70.9ms | ActiveRecord: 12.5ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 11:58:55 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-27", "num_guests"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-27' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:44
+  [1m[36mListing Load (0.9ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 108211ms (Views: 1.7ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 12:02:56 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (25.8ms)
+Completed 200 OK in 47ms (Views: 34.2ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 12:02:56 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (9.7ms)
+Completed 200 OK in 163ms (Views: 78.0ms | ActiveRecord: 17.0ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 12:03:15 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"listing_id"=>"4", "checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-27", "num_guests"=>"3"}, "formats"=>:json}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (2.5ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-27' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:44
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (1.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 52395ms (Views: 1.7ms | ActiveRecord: 10.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:16:54 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (31.8ms)
+Completed 200 OK in 726ms (Views: 710.6ms | ActiveRecord: 12.1ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:17:02 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (14.7ms)
+Completed 200 OK in 193ms (Views: 80.0ms | ActiveRecord: 30.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:18:58 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 779ms (Views: 775.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:19:05 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (2.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (17.8ms)
+Completed 200 OK in 234ms (Views: 121.2ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:22:02 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 35ms (Views: 31.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:22:27 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (9.8ms)
+Completed 200 OK in 129ms (Views: 70.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:30:26 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 735ms (Views: 730.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:30:29 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (2.0ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/show.json.jbuilder (15.6ms)
+Completed 200 OK in 171ms (Views: 99.4ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 13:31:52 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-28", "checkout_date"=>"2019-12-29", "num_guests"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-29' OR 
+        checkout_date < '2019-12-28') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:43
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 10353ms (Views: 0.3ms | ActiveRecord: 12.9ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:32:59 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 676ms (Views: 671.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:33:05 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.3ms)
+  Rendered api/listings/show.json.jbuilder (13.7ms)
+Completed 200 OK in 184ms (Views: 94.5ms | ActiveRecord: 29.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:33:46 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:36:02 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (2.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.8ms)
+  Rendered api/listings/show.json.jbuilder (14.8ms)
+Completed 200 OK in 236ms (Views: 80.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:36:06 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 652ms (Views: 649.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:36:09 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (3.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.8ms)
+  Rendered api/listings/show.json.jbuilder (13.5ms)
+Completed 200 OK in 183ms (Views: 92.0ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:36:50 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.8ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:37:30 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (5.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.7ms)
+  Rendered api/listings/show.json.jbuilder (20.6ms)
+Completed 200 OK in 199ms (Views: 119.7ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:40:40 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 771ms (Views: 768.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:40:44 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 666ms (Views: 659.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:40:48 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.8ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (14.9ms)
+Completed 200 OK in 89ms (Views: 51.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:40:51 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:41:01 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.6ms)
+  Rendered api/listings/show.json.jbuilder (18.8ms)
+Completed 200 OK in 92ms (Views: 58.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:41:27 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.7ms)
+  Rendered static_pages/root.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 716ms (Views: 712.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:41:28 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (4.3ms)
+  Rendered api/listings/show.json.jbuilder (29.5ms)
+Completed 200 OK in 156ms (Views: 104.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 13:43:04 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-26", "num_guests"=>"1"}, "formats"=>:json}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.6ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" IS NULL AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/models/booking.rb:43
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 4464ms (Views: 0.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:43:43 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.5ms)
+  Rendered static_pages/root.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 682ms (Views: 677.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:44:16 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (1.1ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (27.7ms)
+Completed 200 OK in 166ms (Views: 108.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:48:45 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 730ms (Views: 726.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:48:47 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.4ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.5ms)
+  Rendered api/listings/show.json.jbuilder (16.5ms)
+Completed 200 OK in 104ms (Views: 56.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 13:51:18 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-26", "num_guests"=>"2", "listing_id"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:43
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 16157ms (Views: 0.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-11 13:54:22 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (0.4ms)
+  Rendered static_pages/root.html.erb within layouts/application (27.1ms)
+Completed 200 OK in 68ms (Views: 55.5ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-11 13:54:23 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (0.6ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (0.7ms)
+  Rendered api/listings/show.json.jbuilder (16.0ms)
+Completed 200 OK in 246ms (Views: 107.1ms | ActiveRecord: 38.8ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 13:54:47 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2019-12-25", "checkout_date"=>"2019-12-26", "num_guests"=>"3", "listing_id"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Load (1.4ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mBooking Exists (1.1ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:43
+  [1m[36mCACHE Booking Load (0.0ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2019-12-26' OR 
+        checkout_date < '2019-12-25') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:45
+  [1m[36mListing Load (0.5ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+Completed 422 Unprocessable Entity in 156449ms (Views: 0.3ms | ActiveRecord: 11.4ms)
+
+
+Started POST "/api/bookings" for ::1 at 2019-11-11 13:57:49 -0600
+Processing by Api::BookingsController#create as */*
+  Parameters: {"booking"=>{"checkin_date"=>"2020-01-06", "checkout_date"=>"2020-01-07", "num_guests"=>"3", "listing_id"=>"4"}, "formats"=>:json}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "5OG2gjZmJoNe2M8DvIeHew"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Load (0.6ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mCACHE Booking Load (0.1ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mCACHE Booking Load (0.0ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mCACHE Booking Load (0.0ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mCACHE Booking Load (0.0ms)[0m  [1m[34mSELECT  "bookings".* FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 11]]
+  ↳ app/models/booking.rb:43
+  [1m[36mBooking Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "bookings" WHERE "bookings"."id" IS NOT NULL AND "bookings"."listing_id" = $1 AND NOT (checkin_date > '2020-01-07' OR 
+        checkout_date < '2020-01-06') LIMIT $2[0m  [["listing_id", 4], ["LIMIT", 1]]
+  ↳ app/models/booking.rb:43
+  [1m[36mListing Load (1.2ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[36mBooking Create (0.9ms)[0m  [1m[32mINSERT INTO "bookings" ("listing_id", "guest_id", "checkin_date", "checkout_date", "created_at", "updated_at", "num_guests") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["listing_id", 4], ["guest_id", 1], ["checkin_date", "2020-01-06"], ["checkout_date", "2020-01-07"], ["created_at", "2019-11-11 19:58:05.302672"], ["updated_at", "2019-11-11 19:58:05.302672"], ["num_guests", 3]]
+  ↳ app/controllers/api/bookings_controller.rb:12
+  [1m[35m (41.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/bookings_controller.rb:12
+  Rendering api/bookings/show.json.jbuilder
+  Rendered api/bookings/_booking.json.jbuilder (0.4ms)
+  Rendered api/bookings/show.json.jbuilder (9.4ms)
+Completed 200 OK in 23322ms (Views: 46.5ms | ActiveRecord: 53.7ms)
+
+

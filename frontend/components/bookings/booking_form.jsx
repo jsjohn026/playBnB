@@ -3,32 +3,37 @@ import React from "react";
 class BookingForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = this.props.booking;
+    this.state = {
+      checkin_date: "",
+      checkout_date: "",
+      num_guests: 1
+    }
+
     this.handleSubmit = this.handleSubmit.bind(this);
     this.update = this.update.bind(this);
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    const newBooking = {
-      listing_id: this.state.listing_id,
-      checkin_date: this.state.checkin_date,
-      checkout_date: this.state.checkout_date,
-      num_guests: this.state.num_guests 
-    }
     
-    this.setState(newBooking, () => this.props.createBooking(newBooking));
+    const booking = Object.assign( {}, this.state, {
+      listing_id: this.props.listing_id,
+    })
+    this.props.createBooking(booking);
   }
 
   update(field) {
-    return e => this.setState({
-      [field]: e.currentTarget.value
-    });
+    return e => {
+      if (field === "num_guests") {
+        this.setState({ [field]: parseInt(e.currentTarget.value) })
+      } else {
+        this.setState({ [field]: e.currentTarget.value });
+      }
+    }
   }
 
   render() {
     const listing = this.props.listing;
-
     return (
       <div className="booking-form">
         <div className="booking-form-header">

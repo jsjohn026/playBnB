@@ -4,19 +4,14 @@ import { createBooking } from "../../actions/booking_actions";
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    booking: { 
-      listing_id: ownProps.listing.id,  
-      checkin_date: null,  
-      checkout_date: null,  
-      num_guests: 1 
-    }
+    bookings: Object.values(state.entities.bookings),
+    listing_id: ownProps.listing.id,
   } 
 }
 
 const mapDispatchToProps = dispatch => {
   return {
     createBooking: (booking) => dispatch(createBooking(booking)),
-    clearErrors: () => dispatch(clearErrors())
   }
 }
 

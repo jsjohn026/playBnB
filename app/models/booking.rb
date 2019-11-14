@@ -35,10 +35,9 @@ class Booking < ApplicationRecord
     bookings = Booking
       .where.not(id: self.id)
       .where(listing_id: listing_id)
-      .where.not("checkin_date > :checkout_date OR 
-        checkout_date < :checkin_date", 
+      .where.not('checkin_date > :checkout_date OR 
+        checkout_date < :checkin_date', 
         checkin_date: checkin_date, checkout_date: checkout_date)
-    
     unless bookings.empty?
       errors[:booking] << "This listing is not available for the selected dates"
     end

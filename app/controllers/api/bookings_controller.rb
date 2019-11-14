@@ -1,3 +1,4 @@
+require 'byebug'
 class Api::BookingsController < ApplicationController
   before_action :ensure_logged_in
 
@@ -20,7 +21,7 @@ class Api::BookingsController < ApplicationController
   end
   
   def update
-    @booking = Booking.find(params[:id])
+    @booking = @current_user.bookings.find(params[:id])
     if @booking.update(booking_params)
       render :show
     else
