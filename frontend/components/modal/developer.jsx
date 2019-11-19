@@ -7,6 +7,7 @@ class Developer extends React.Component {
   render() {
     return (
       <div className="login-form-box">
+        <div onClick={this.props.closeModal} className="close-x">X</div>
         <div>This feature is under development.</div>
         <div>In the meantime, check out the developer:</div>
         <div><a href="https://www.jasminejohn.io/">

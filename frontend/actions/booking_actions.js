@@ -4,7 +4,6 @@ export const RECEIVE_BOOKINGS = 'RECEIVE_BOOKINGS';
 export const RECEIVE_BOOKING = 'RECEIVE_BOOKING';
 
 export const receiveBookings = bookings => {
-  debugger
   return {
     type: RECEIVE_BOOKINGS, 
     bookings

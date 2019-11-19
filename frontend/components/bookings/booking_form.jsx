@@ -19,6 +19,7 @@ class BookingForm extends React.Component {
     const booking = Object.assign( {}, this.state, {
       listing_id: this.props.listing_id,
     })
+    this.props.openModal("booking confirmation");
     this.props.createBooking(booking);
   }
 

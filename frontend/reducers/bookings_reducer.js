@@ -9,7 +9,6 @@ const bookingsReducer = (state = {}, action) => {
 
   switch (action.type) {
     case RECEIVE_BOOKINGS:
-      debugger
       return action.bookings;
       // return merge({}, state, action.bookings);
     case RECEIVE_BOOKING:
