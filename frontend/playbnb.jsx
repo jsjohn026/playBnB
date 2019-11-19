@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Root from "./components/root";
 import configureStore from './store/store';
 import { fetchListings } from "./actions/listing_actions";
-import { createBooking } from "./util/booking_api_util";
+import { createBooking, fetchBooking, fetchBookings } from "./util/booking_api_util";
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -22,6 +22,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.dispatch = store.dispatch;
   window.getState = store.getState;
   window.fetchListings = fetchListings;
+  window.fetchBooking = fetchBooking;
+  window.fetchBookings = fetchBookings;
 
   window.createBooking = createBooking;
   window.booking = {

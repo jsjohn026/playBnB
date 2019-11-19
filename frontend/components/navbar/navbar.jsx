@@ -11,8 +11,8 @@ const Navbar = ({ currentUser, logout, openModal }) => {
           <Link to="/"></Link>
         </div>
         <ul className="header-list">
-          <li><a href="#">Become a host</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="#" onClick={() => openModal("developer")}>Become a host</a></li>
+          <li><a href="#" onClick={() => openModal("developer")}>Help</a></li>
           <li><button 
             onClick={() => openModal("signup")} 
             className="login-signup">Sign Up</button></li>
@@ -33,11 +33,11 @@ const Navbar = ({ currentUser, logout, openModal }) => {
           <Link to="/"></Link>
         </div>
         <ul className="header-list">
-          <li><a href="#">Become a host</a></li>
-          <li><a href="#">Saved</a></li>
-          <li><a href="#">Trips</a></li>
-          <li><a href="#">Messages</a></li>
-          <li><a href="#">Help</a></li>
+          <li><a href="#" onClick={() => openModal("developer")}>Become a host</a></li>
+            <li><a href="#" onClick={() => openModal("developer")}>Saved</a></li>
+            <li><a href="#" onClick={() => openModal("developer")}>Trips</a></li>
+            <li><a href="#" onClick={() => openModal("developer")}>Messages</a></li>
+            <li><a href="#" onClick={() => openModal("developer")}>Help</a></li>
           <li>
           <hgroup className="header-group">
             <div className="header-name">Hi, {currentUser.fname}!</div>

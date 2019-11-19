@@ -1,8 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { closeModal } from "../../actions/modal_actions";
+
 import LoginFormContainer from "../session_form/login_form_container";
 import SignupFormContainer from "../session_form/signup_form_container";
+import BookingConfirmationContainer from "../bookings/booking_confirmation_container";
+import Developer from "./developer";
 
 function Modal({modal, closeModal}) {
   if (!modal) {
@@ -15,6 +18,12 @@ function Modal({modal, closeModal}) {
       break;
     case 'signup':
       component = <SignupFormContainer />;
+      break;
+    case 'booking confirmation':
+      component = <BookingConfirmationContainer />
+      break;
+    case 'developer':
+      component = <Developer />
       break;
     default:
       return null;
