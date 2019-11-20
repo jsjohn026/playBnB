@@ -12,7 +12,7 @@ const bookingsReducer = (state = {}, action) => {
       return action.bookings;
       // return merge({}, state, action.bookings);
     case RECEIVE_BOOKING:
-      const newBooking = { [action.booking.id]: action.booking };
+      const newBooking = { [action.booking.booking.id]: action.booking.booking };
       return merge({}, state, newBooking);
     default:
       return state;

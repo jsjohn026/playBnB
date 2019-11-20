@@ -11,13 +11,13 @@ class Developer extends React.Component {
         <div>This feature is under development.</div>
         <div>In the meantime, check out the developer:</div>
         <div><a href="https://www.jasminejohn.io/">
-            <button>Portfolio</button></a></div>
+            <button className="reserve-button">Portfolio</button></a></div>
         <div><a href="https://github.com/jsjohn026">
-            <button>Github</button></a></div>
+            <button className="reserve-button">Github</button></a></div>
         <div><a href="https://www.linkedin.com/in/jasmine-john-026/">
-            <button>LinkedIn</button></a></div>
+            <button className="reserve-button">LinkedIn</button></a></div>
         <div><a href="https://angel.co/jasmine-john-2?public_profile=1">
-            <button>AngelList</button></a></div>
+            <button className="reserve-button">AngelList</button></a></div>
       </div>
     )
   }

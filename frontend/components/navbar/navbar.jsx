@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = ({ currentUser, logout, openModal }) => {
+
+  const handleClick = () => {openModal("developer")};
   
   const nonUserLinks = () => {
     return(
@@ -11,8 +13,8 @@ const Navbar = ({ currentUser, logout, openModal }) => {
           <Link to="/"></Link>
         </div>
         <ul className="header-list">
-          <li><a href="#" onClick={() => openModal("developer")}>Become a host</a></li>
-          <li><a href="#" onClick={() => openModal("developer")}>Help</a></li>
+          <li><a href="#" onClick={handleClick}>Become a host</a></li>
+          <li><a href="#" onClick={handleClick}>Help</a></li>
           <li><button 
             onClick={() => openModal("signup")} 
             className="login-signup">Sign Up</button></li>
@@ -33,11 +35,11 @@ const Navbar = ({ currentUser, logout, openModal }) => {
           <Link to="/"></Link>
         </div>
         <ul className="header-list">
-          <li><a href="#" onClick={() => openModal("developer")}>Become a host</a></li>
-            <li><a href="#" onClick={() => openModal("developer")}>Saved</a></li>
-            <li><a href="#" onClick={() => openModal("developer")}>Trips</a></li>
-            <li><a href="#" onClick={() => openModal("developer")}>Messages</a></li>
-            <li><a href="#" onClick={() => openModal("developer")}>Help</a></li>
+          <li><a onClick={handleClick}>Become a host</a></li>
+            <li><a onClick={handleClick}>Saved</a></li>
+            <li><a onClick={handleClick}>Trips</a></li>
+            <li><a onClick={handleClick}>Messages</a></li>
+            <li><a onClick={handleClick}>Help</a></li>
           <li>
           <hgroup className="header-group">
             <div className="header-name">Hi, {currentUser.fname}!</div>

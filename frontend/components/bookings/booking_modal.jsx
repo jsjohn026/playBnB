@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class BookingModal extends React.Component {
   constructor(props) {
@@ -9,14 +10,27 @@ class BookingModal extends React.Component {
       // listing_id: this.props.bookingData.listing_id,
       // num_guests: this.props.bookingData.num_guests
     } 
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleRedirect() {
+    return (
+      location.href = "#"
+    )
+  } 
+  
+  handleSubmit() {
+    this.handleRedirect();
+    this.props.closeModal();
   }
 
   render() {
     return (
       <div className="login-form-box">
         <div onClick={this.props.closeModal} className="close-x">X</div>
-        <div>modal is working bro!</div>
-        <button>MODAL BUTTON BRO</button>
+        <div>Booking Confirmed</div>
+        <button onClick={this.handleSubmit} className="reserve-button">RETURN TO LISTINGS
+        </button>
       </div>
     )
   }
