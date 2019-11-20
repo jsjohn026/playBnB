@@ -62366,3 +62366,25 @@ Processing by Api::ListingsController#show as */*
 Completed 200 OK in 311ms (Views: 192.0ms | ActiveRecord: 14.8ms)
 
 
+Started GET "/?date=2019-11-22&date=2019-11-24&guests=1" for ::1 at 2019-11-20 17:54:51 -0600
+Processing by StaticPagesController#root as HTML
+  Parameters: {"date"=>"2019-11-24", "guests"=>"1"}
+  Rendering static_pages/root.html.erb within layouts/application
+  [1m[36mUser Load (41.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."session_token" = $1 LIMIT $2[0m  [["session_token", "pruVd-3OXUqZ_N9wkAFhXg"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25
+  Rendered api/users/_user.json.jbuilder (1.6ms)
+  Rendered static_pages/root.html.erb within layouts/application (56.4ms)
+Completed 200 OK in 786ms (Views: 739.4ms | ActiveRecord: 41.6ms)
+
+
+Started GET "/api/listings/4" for ::1 at 2019-11-20 17:54:52 -0600
+Processing by Api::ListingsController#show as */*
+  Parameters: {"formats"=>:json, "id"=>"4"}
+  [1m[36mListing Load (87.7ms)[0m  [1m[34mSELECT  "listings".* FROM "listings" WHERE "listings"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/api/listings_controller.rb:19
+  Rendering api/listings/show.json.jbuilder
+  Rendered api/listings/_listing.json.jbuilder (1.1ms)
+  Rendered api/listings/show.json.jbuilder (19.3ms)
+Completed 200 OK in 243ms (Views: 69.1ms | ActiveRecord: 88.9ms)
+
+
