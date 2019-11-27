@@ -37,7 +37,7 @@ class Navbar extends React.Component {
 
     const userDropdown = (
       <ul id="dropdown" className="dropdown hidden">
-        <li>Hi, {currentUser.fname}!</li>
+        {/* <li>Hi, {currentUser.fname}!</li> */}
         <li>Reservations</li>
         <li>
           <button className="header-button" onClick={logout}>Log Out</button></li>
