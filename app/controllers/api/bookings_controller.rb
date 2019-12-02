@@ -1,4 +1,3 @@
-require 'byebug'
 class Api::BookingsController < ApplicationController
   before_action :ensure_logged_in
 
