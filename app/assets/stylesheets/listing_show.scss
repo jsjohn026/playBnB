@@ -6,12 +6,10 @@
 .listing-image-row {
   display: flex;
   flex-wrap: wrap;
-  // height: 660px;
   min-width: 100%;
   min-height: 40vh;
   overflow: hidden;
   max-width: 100%;
-  // max-height: 60vw;
   height: fit-content;
   width: auto;
   box-sizing: border-box;
@@ -71,7 +69,6 @@
   padding-left: 50px;
   border-bottom: 1px solid lightgray; 
   box-sizing: border-box;
-  // width: 100%;
 }
 
 .listing-name {
@@ -157,8 +154,6 @@
 
 .amenities-list {
   display: flex;
-  // height: 200px;
-  // justify-content: flex-start;
 }
 
 .amenities-column {
