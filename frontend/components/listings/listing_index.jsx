@@ -17,7 +17,7 @@ class ListingIndex extends React.Component {
     })
 
     return (
-      <div>
+      <div className="container-div">
         <h3>Explore Playbnb!</h3>
         <ul className="listing-index">
           {listings}
