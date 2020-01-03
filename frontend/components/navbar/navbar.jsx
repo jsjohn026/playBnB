@@ -38,7 +38,7 @@ class Navbar extends React.Component {
     const firstName = currentUser ? currentUser.fname : null;
 
     const userDropdown = (
-      <ul id="dropdown" className="dropdown hidden">
+      <ul id="dropdown" className="dropdown-hidden">
         <li>Hi, {firstName}!</li>
         <li>Reservations</li>
         <li>
@@ -54,15 +54,15 @@ class Navbar extends React.Component {
           </div>
           <ul className="header-list">
             <li><a onClick={this.handleClick}>Become a host</a></li>
-              <li><a onClick={this.handleClick}>Saved</a></li>
-              <li><a onClick={this.handleClick}>Trips</a></li>
-              <li><a onClick={this.handleClick}>Messages</a></li>
-              <li><a onClick={this.handleClick}>Help</a></li>
-            <li>
-            <hgroup className="header-group">
-              <div className="header-name">{userDropdown}</div>
-              {/* <button className="header-button" onClick={logout}>Log Out</button> */}
-            </hgroup>
+            <li><a onClick={this.handleClick}>Saved</a></li>
+            <li><a onClick={this.handleClick}>Trips</a></li>
+            <li><a onClick={this.handleClick}>Messages</a></li>
+            <li><a onClick={this.handleClick}>Help</a></li>
+            <li className="header-group">
+              <div className="header-name">{firstName[0]}
+                {userDropdown}
+              </div>
+            {/* <button className="header-button" onClick={logout}>Log Out</button> */}
             </li>
           </ul>
         </nav>
