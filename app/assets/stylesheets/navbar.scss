@@ -11,7 +11,7 @@
   overflow-x: hidden;
 }
 
-.header-nav, .header-name {
+.header-nav {
   display: flex;
   justify-content: space-between;
   margin: 0 30px;
@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-.header a, .header-button, .login-signup {
+.header a, .header-button, .login-signup, .user-icon {
   display: flex;
   align-items: center;
   color: inherit;
@@ -64,10 +64,26 @@
   cursor: pointer;
 }
 
-.dropdown-hidden {
+.user-dropdown {
   display: none;
   position: absolute;
   min-width: 125px;
-  z-index: 1;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: inherit;
+}
+
+.user-dropdown li {
+  padding: 10px;
+  display: block;
+  text-align: left;
+}
+
+.user-icon:hover .user-dropdown {
+  display: block;
+}
+
+.user-icon {
+  margin-top: 20px;
+  display: inline-block;
+  z-index: 2000;
 }
