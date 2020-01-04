@@ -38,14 +38,15 @@ class Navbar extends React.Component {
     const firstName = currentUser ? currentUser.fname : null;
 
     const userDropdown = (
-      <ul id="dropdown" className="user-dropdown">
+      <div id="dropdown" className="user-dropdown">
         <li>Hi, {firstName}!</li>
         <li>Reservations</li>
         <li>
           <button className="header-button" onClick={logout}>Log Out</button></li>
-      </ul>
+      </div>
     );
   
+    const fName = firstName ? firstName : null;
     const userLinks = (
       <header className="header">
         <nav className="header-nav">
@@ -58,7 +59,7 @@ class Navbar extends React.Component {
             <li><a onClick={this.handleClick}>Trips</a></li>
             <li><a onClick={this.handleClick}>Messages</a></li>
             <li><a onClick={this.handleClick}>Help</a></li>
-            <li className="user-icon">{firstName[0]}
+            <li className="user-icon">{fName}
               {userDropdown}
             {/* <button className="header-button" onClick={logout}>Log Out</button> */}</li>
           </ul>
