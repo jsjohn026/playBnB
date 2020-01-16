@@ -61,7 +61,7 @@ class Navbar extends React.Component {
             <li><a onClick={this.handleClick}>Help</a></li>
             <li className="user-icon">{fName}
               {userDropdown}
-            <button className="header-button" onClick={logout}>Log Out</button></li>
+            {/* <button className="header-button" onClick={logout}>Log Out</button> */}</li>
           </ul>
         </nav>
       </header>
