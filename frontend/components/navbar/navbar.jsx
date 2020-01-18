@@ -39,10 +39,13 @@ class Navbar extends React.Component {
 
     const userDropdown = (
       <div id="dropdown" className="user-dropdown">
-        <a>Hi, {firstName}!</a>
-        <a>Reservations</a>
-        <a><button className="header-button" onClick={logout}>
+        <button className="user-icon">{firstName}</button>
+        <div className="user-dropdown-content">
+          <a>Hi, {firstName}!</a>
+          <a>Reservations</a>
+          <a><button className="header-button" onClick={logout}>
           Log Out</button></a>
+        </div>
       </div>
     );
   
@@ -59,7 +62,7 @@ class Navbar extends React.Component {
             <a onClick={this.handleClick}>Trips</a>
             <a onClick={this.handleClick}>Messages</a>
             <a onClick={this.handleClick}>Help</a>
-            <a className="user-icon">{fName}{userDropdown}</a>
+            {userDropdown}
           </div>
         </nav>
       </header>
