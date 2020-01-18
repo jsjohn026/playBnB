@@ -69,14 +69,14 @@
 }
 
 .user-dropdown-content {
+  right: 0;
   display: none;
   position: absolute;
   background-color: white;
   min-width: 125px;
   box-shadow: 0 /px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  padding: 10px;
-  text-align: left;
+  text-align: right;
 }
 
 .user-dropdown-content a {
@@ -87,6 +87,10 @@
 
 .user-dropdown:hover .user-dropdown-content {
   display: block;
+}
+
+.user-dropdown-content a:hover {
+  background-color: #ddd;
 }
 
 .user-icon {

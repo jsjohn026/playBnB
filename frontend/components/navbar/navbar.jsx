@@ -42,9 +42,9 @@ class Navbar extends React.Component {
         <button className="user-icon">{firstName}</button>
         <div className="user-dropdown-content">
           <a>Hi, {firstName}!</a>
-          <a>Reservations</a>
-          <a><button className="header-button" onClick={logout}>
-          Log Out</button></a>
+          <a onClick={this.handleClick}>Reservations</a>
+          <a className="header-button" onClick={logout}>
+          Log Out</a>
         </div>
       </div>
     );
