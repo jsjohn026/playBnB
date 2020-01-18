@@ -21,16 +21,16 @@ class Navbar extends React.Component {
           <div className="header-logo">
             <Link to="/"></Link>
           </div>
-          <ul className="header-list">
-            <li><a href="#" onClick={this.handleClick}>Become a host</a></li>
-            <li><a href="#" onClick={this.handleClick}>Help</a></li>
-            <li><button 
+          <div className="header-list">
+            <a href="#" onClick={this.handleClick}>Become a host</a>
+            <a href="#" onClick={this.handleClick}>Help</a>
+            <button 
               onClick={() => openModal("signup")} 
-              className="login-signup">Sign Up</button></li>
-            <li><button 
+              className="login-signup">Sign Up</button>
+            <button 
               onClick={() => openModal("login")} 
-              className="login-signup">Log In</button></li>
-          </ul>
+              className="login-signup">Log In</button>
+          </div>
         </nav>
       </header>
     );
@@ -39,10 +39,10 @@ class Navbar extends React.Component {
 
     const userDropdown = (
       <div id="dropdown" className="user-dropdown">
-        <li>Hi, {firstName}!</li>
-        <li>Reservations</li>
-        <li>
-          <button className="header-button" onClick={logout}>Log Out</button></li>
+        <a>Hi, {firstName}!</a>
+        <a>Reservations</a>
+        <a><button className="header-button" onClick={logout}>
+          Log Out</button></a>
       </div>
     );
   
@@ -53,14 +53,14 @@ class Navbar extends React.Component {
           <div className="header-logo">
             <Link to="/"></Link>
           </div>
-          <ul className="header-list">
-            <li><a onClick={this.handleClick}>Become a host</a></li>
-            <li><a onClick={this.handleClick}>Saved</a></li>
-            <li><a onClick={this.handleClick}>Trips</a></li>
-            <li><a onClick={this.handleClick}>Messages</a></li>
-            <li><a onClick={this.handleClick}>Help</a></li>
-            <li className="user-icon">{fName}{userDropdown}</li>
-          </ul>
+          <div className="header-list">
+            <a onClick={this.handleClick}>Become a host</a>
+            <a onClick={this.handleClick}>Saved</a>
+            <a onClick={this.handleClick}>Trips</a>
+            <a onClick={this.handleClick}>Messages</a>
+            <a onClick={this.handleClick}>Help</a>
+            <a className="user-icon">{fName}{userDropdown}</a>
+          </div>
         </nav>
       </header>
     );
